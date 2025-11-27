@@ -11,6 +11,22 @@ const INITIAL_DATA = {
     "Space": { name: "宇宙", change: 0, votes: 0 }
 };
 
+// Mapping of tickers to Japanese company names
+const TICKER_NAMES = {
+    "9984.T": "ソフトバンクG", "6861.T": "キーエンス", "6954.T": "ファナック", "6273.T": "SMC", "6645.T": "オムロン",
+    "3993.T": "PKSHA", "4180.T": "Appier", "247A.T": "Aiロボティクス", "4382.T": "HEROZ", "4011.T": "ヘッドウォータース",
+    "6702.T": "富士通", "6701.T": "NEC", "9432.T": "NTT", "6501.T": "日立製作所", "6503.T": "三菱電機",
+    "3687.T": "フィックスターズ", "6597.T": "HPCシステムズ", "6521.T": "オキサイド", "7713.T": "シグマ光機", "2693.T": "YKT",
+    "8035.T": "東エレク", "6857.T": "アドバンテスト", "4063.T": "信越化学", "6146.T": "ディスコ", "6920.T": "レーザーテック",
+    "6323.T": "ローツェ", "6315.T": "TOWA", "4369.T": "トリケミカル", "6871.T": "日本マイクロ", "6266.T": "タツモ",
+    "4519.T": "中外製薬", "4568.T": "第一三共", "4502.T": "武田薬品", "4578.T": "大塚HD", "4503.T": "アステラス",
+    "4587.T": "ペプチドリーム", "2160.T": "GNI", "4552.T": "JCRファーマ", "4592.T": "サンバイオ", "4599.T": "ステムリム",
+    "7013.T": "IHI", "5802.T": "住友電工", "5803.T": "フジクラ", "5801.T": "古河電工", "1963.T": "日揮HD",
+    "5310.T": "東洋炭素", "7711.T": "助川電気", "3446.T": "ジェイテック", "6378.T": "木村化工機", "6864.T": "エヌエフHD",
+    "7011.T": "三菱重工", "7012.T": "川崎重工", "9412.T": "スカパーJSAT", "7751.T": "キヤノン", "9433.T": "KDDI",
+    "9348.T": "ispace", "5595.T": "QPS研究所", "186A.T": "アストロスケール", "290A.T": "Synspective", "402A.T": "アクセルスペース"
+};
+
 function App() {
     const [data, setData] = useState(INITIAL_DATA);
     const [hasVoted, setHasVoted] = useState(false);
@@ -43,6 +59,10 @@ function App() {
                     Object.keys(json.sectors).forEach(key => {
                         if (newData[key]) {
                             newData[key].change = json.sectors[key].change_percent;
+                            // Store tickers data if available
+                            if (json.sectors[key].tickers) {
+                                newData[key].tickers = json.sectors[key].tickers;
+                            }
                         }
                     });
                     return newData;
@@ -115,7 +135,7 @@ function App() {
                             あなたは <span className="text-blue-400 font-bold">{data[selectedSector].name}</span> に投票しました。
                         </p>
 
-                        <div className="h-[400px] w-full">
+                        <div className="h-[400px] w-full mb-8">
                             <ResponsiveContainer width="100%" height="100%">
                                 <BarChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                                     <CartesianGrid strokeDasharray="3 3" stroke="#444" />
@@ -130,7 +150,33 @@ function App() {
                                 </BarChart>
                             </ResponsiveContainer>
                         </div>
-                        <p className="text-sm text-gray-500 mt-4 text-right">
+
+                        {/* Stock Details List */}
+                        {data[selectedSector].tickers && (
+                            <div className="mt-8">
+                                <h3 className="text-xl font-bold mb-4 text-gray-200">
+                                    {data[selectedSector].name} 構成銘柄 (10社)
+                                </h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {data[selectedSector].tickers.map((stock) => (
+                                        <div key={stock.ticker} className="bg-gray-700 p-4 rounded-lg flex justify-between items-center">
+                                            <div>
+                                                <div className="font-bold text-lg">{TICKER_NAMES[stock.ticker] || stock.ticker}</div>
+                                                <div className="text-sm text-gray-400">{stock.ticker}</div>
+                                            </div>
+                                            <div className="text-right">
+                                                <div className={`font-bold text-lg ${stock.change > 0 ? 'text-red-400' : stock.change < 0 ? 'text-green-400' : 'text-gray-400'}`}>
+                                                    {stock.change > 0 ? '+' : ''}{stock.change}%
+                                                </div>
+                                                <div className="text-sm text-gray-400">¥{stock.price.toLocaleString()}</div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+
+                        <p className="text-sm text-gray-500 mt-8 text-right">
                             ※市場パフォーマンスは各分野の代表10銘柄の直近騰落率平均です。<br />
                             データ更新日: {new Date().toLocaleDateString()}
                         </p>
