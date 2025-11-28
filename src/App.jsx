@@ -124,42 +124,96 @@ function App() {
                             </button>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {data[selectedSector].tickers.length > 0 ? (
-                                data[selectedSector].tickers.map((stock) => {
-                                    // Handle legacy data (string only) vs new data (object)
-                                    const isObject = typeof stock === 'object' && stock !== null;
-                                    const ticker = isObject ? stock.ticker : stock;
-                                    const change = isObject ? stock.change : null;
-                                    const price = isObject ? stock.price : null;
+                        <div className="space-y-8">
+                            {/* Large Cap Section */}
+                            <div>
+                                <h3 className="text-xl font-bold text-gray-300 mb-4 border-l-4 border-blue-500 pl-3">
+                                    大型株 (Large Cap)
+                                </h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {data[selectedSector].tickers.slice(0, 5).map((stock) => {
+                                        const isObject = typeof stock === 'object' && stock !== null;
+                                        const ticker = isObject ? stock.ticker : stock;
+                                        const change = isObject ? stock.change : null;
+                                        const price = isObject ? stock.price : null;
 
-                                    return (
-                                        <div key={ticker} className="flex justify-between items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
-                                            <div>
-                                                <div className="font-bold text-lg">{STOCK_NAMES[ticker] || ticker}</div>
-                                                <div className="text-sm text-gray-400">{ticker}</div>
-                                            </div>
-                                            <div className="text-right">
-                                                {price !== null ? (
-                                                    <>
-                                                        <div className={`font-bold text-lg ${change > 0 ? 'text-red-400' : change < 0 ? 'text-green-400' : 'text-gray-300'}`}>
-                                                            {change > 0 ? '+' : ''}{change}%
-                                                        </div>
-                                                        <div className="text-sm text-gray-300">¥{price.toLocaleString()}</div>
-                                                    </>
-                                                ) : (
-                                                    <div className="text-gray-400 text-sm">データ更新待ち</div>
-                                                )}
-                                            </div>
-                                        </div>
-                                    );
-                                })
-                            ) : (
-                                <p className="col-span-2 text-center text-gray-400 py-8">
-                                    データ取得中、またはデータがありません。<br />
-                                    (GitHub Actionsの更新をお待ちください)
-                                </p>
-                            )}
+                                        return (
+                                            <a
+                                                key={ticker}
+                                                href={`https://finance.yahoo.co.jp/quote/${ticker}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex justify-between items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors group"
+                                            >
+                                                <div>
+                                                    <div className="font-bold text-lg group-hover:text-blue-300 transition-colors">
+                                                        {STOCK_NAMES[ticker] || ticker}
+                                                        <span className="ml-2 text-xs text-gray-500">🔗</span>
+                                                    </div>
+                                                    <div className="text-sm text-gray-400">{ticker}</div>
+                                                </div>
+                                                <div className="text-right">
+                                                    {price !== null ? (
+                                                        <>
+                                                            <div className={`font-bold text-lg ${change > 0 ? 'text-red-400' : change < 0 ? 'text-green-400' : 'text-gray-300'}`}>
+                                                                {change > 0 ? '+' : ''}{change}%
+                                                            </div>
+                                                            <div className="text-sm text-gray-300">¥{price.toLocaleString()}</div>
+                                                        </>
+                                                    ) : (
+                                                        <div className="text-gray-400 text-sm">データ更新待ち</div>
+                                                    )}
+                                                </div>
+                                            </a>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+
+                            {/* Small/Mid Cap Section */}
+                            <div>
+                                <h3 className="text-xl font-bold text-gray-300 mb-4 border-l-4 border-purple-500 pl-3">
+                                    中小型株 (Small/Mid Cap)
+                                </h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {data[selectedSector].tickers.slice(5, 10).map((stock) => {
+                                        const isObject = typeof stock === 'object' && stock !== null;
+                                        const ticker = isObject ? stock.ticker : stock;
+                                        const change = isObject ? stock.change : null;
+                                        const price = isObject ? stock.price : null;
+
+                                        return (
+                                            <a
+                                                key={ticker}
+                                                href={`https://finance.yahoo.co.jp/quote/${ticker}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex justify-between items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors group"
+                                            >
+                                                <div>
+                                                    <div className="font-bold text-lg group-hover:text-blue-300 transition-colors">
+                                                        {STOCK_NAMES[ticker] || ticker}
+                                                        <span className="ml-2 text-xs text-gray-500">🔗</span>
+                                                    </div>
+                                                    <div className="text-sm text-gray-400">{ticker}</div>
+                                                </div>
+                                                <div className="text-right">
+                                                    {price !== null ? (
+                                                        <>
+                                                            <div className={`font-bold text-lg ${change > 0 ? 'text-red-400' : change < 0 ? 'text-green-400' : 'text-gray-300'}`}>
+                                                                {change > 0 ? '+' : ''}{change}%
+                                                            </div>
+                                                            <div className="text-sm text-gray-300">¥{price.toLocaleString()}</div>
+                                                        </>
+                                                    ) : (
+                                                        <div className="text-gray-400 text-sm">データ更新待ち</div>
+                                                    )}
+                                                </div>
+                                            </a>
+                                        );
+                                    })}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
