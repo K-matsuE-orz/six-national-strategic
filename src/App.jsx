@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine } from 'recharts';
 
 // Stock Name Mapping (Ticker -> Japanese Name)
 const STOCK_NAMES = {
@@ -34,6 +34,7 @@ const INITIAL_DATA = {
 
 function App() {
     const [data, setData] = useState(INITIAL_DATA);
+    const [historyData, setHistoryData] = useState([]);
     const [selectedSector, setSelectedSector] = useState(null);
 
     useEffect(() => {
@@ -55,6 +56,9 @@ function App() {
                         });
                         return newData;
                     });
+                }
+                if (json.history) {
+                    setHistoryData(json.history);
                 }
             } catch (err) {
                 console.error("Failed to load stock data", err);
@@ -220,22 +224,64 @@ function App() {
             )}
 
             {/* Chart Section */}
-            <div className="max-w-6xl mx-auto mt-12 bg-gray-800 p-8 rounded-xl border border-gray-700">
-                <h2 className="text-2xl font-bold mb-6">セクター別 平均騰落率</h2>
-                <div className="h-[400px] w-full">
-                    <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-                            <CartesianGrid strokeDasharray="3 3" stroke="#444" />
-                            <XAxis dataKey="name" stroke="#ccc" fontSize={12} interval={0} angle={-45} textAnchor="end" height={80} />
-                            <YAxis stroke="#ccc" label={{ value: '騰落率 (%)', angle: -90, position: 'insideLeft' }} />
-                            <Tooltip
-                                contentStyle={{ backgroundColor: '#1f2937', borderColor: '#374151' }}
-                                itemStyle={{ color: '#fff' }}
-                            />
-                            <Legend />
-                            <Bar dataKey="Growth" fill="#8884d8" name="平均騰落率" />
-                        </BarChart>
-                    </ResponsiveContainer>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mt-12">
+                {/* Bar Chart (Daily Change) */}
+                <div className="bg-gray-800 p-8 rounded-xl border border-gray-700">
+                    <h2 className="text-2xl font-bold mb-6">セクター別 平均騰落率 (前日比)</h2>
+                    <div className="h-[300px] w-full">
+                        <ResponsiveContainer width="100%" height="100%">
+                            <BarChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                                <CartesianGrid strokeDasharray="3 3" stroke="#444" />
+                                <XAxis dataKey="name" stroke="#ccc" fontSize={12} interval={0} angle={-45} textAnchor="end" height={80} />
+                                <YAxis stroke="#ccc" label={{ value: '騰落率 (%)', angle: -90, position: 'insideLeft' }} />
+                                <Tooltip
+                                    contentStyle={{ backgroundColor: '#1f2937', borderColor: '#374151' }}
+                                    itemStyle={{ color: '#fff' }}
+                                />
+                                <Legend />
+                                <Bar dataKey="Growth" fill="#8884d8" name="平均騰落率" />
+                            </BarChart>
+                        </ResponsiveContainer>
+                    </div>
+                </div>
+
+                {/* Line Chart (1-Year Trend) */}
+                <div className="bg-gray-800 p-8 rounded-xl border border-gray-700">
+                    <h2 className="text-2xl font-bold mb-6">過去1年間の推移 (セクター別)</h2>
+                    <div className="h-[300px] w-full">
+                        <ResponsiveContainer width="100%" height="100%">
+                            <LineChart data={historyData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                                <CartesianGrid strokeDasharray="3 3" stroke="#444" />
+                                <XAxis
+                                    dataKey="date"
+                                    stroke="#ccc"
+                                    fontSize={12}
+                                    tickFormatter={(str) => {
+                                        const d = new Date(str);
+                                        return `${d.getMonth() + 1}/${d.getDate()}`;
+                                    }}
+                                    interval={30}
+                                />
+                                <YAxis stroke="#ccc" label={{ value: '変化率 (%)', angle: -90, position: 'insideLeft' }} />
+                                <Tooltip
+                                    contentStyle={{ backgroundColor: '#1f2937', borderColor: '#374151' }}
+                                    itemStyle={{ color: '#fff' }}
+                                    labelFormatter={(label) => new Date(label).toLocaleDateString()}
+                                />
+                                <Legend />
+                                {/* News Annotation Line */}
+                                <ReferenceLine x={new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]} stroke="red" label="減税報道" strokeDasharray="3 3" />
+
+                                <Line type="monotone" dataKey="AI_Robot" stroke="#3b82f6" dot={false} name="AI・ロボ" />
+                                <Line type="monotone" dataKey="Quantum" stroke="#8b5cf6" dot={false} name="量子" />
+                                <Line type="monotone" dataKey="Semi" stroke="#10b981" dot={false} name="半導体" />
+                                <Line type="monotone" dataKey="Bio" stroke="#ec4899" dot={false} name="バイオ" />
+                                <Line type="monotone" dataKey="Fusion" stroke="#f59e0b" dot={false} name="核融合" />
+                                <Line type="monotone" dataKey="Space" stroke="#6366f1" dot={false} name="宇宙" />
+                            </LineChart>
+                        </ResponsiveContainer>
+                    </div>
+                    <p className="text-xs text-gray-400 mt-2 text-right">※1年前を0%とした変化率</p>
                 </div>
             </div>
         </div>
