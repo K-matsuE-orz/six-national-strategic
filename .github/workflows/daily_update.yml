@@ -32,5 +32,5 @@ jobs:
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update stock data [skip ci]"
+          commit_message: "Update stock data"
           file_pattern: public/stock_data.json
