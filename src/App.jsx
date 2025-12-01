@@ -180,6 +180,7 @@ function App() {
                                     <Legend iconType="circle" wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }} />
                                     <ReferenceLine x="2025-11-26" stroke="#ef4444" strokeDasharray="3 3" label={{ value: '減税報道', fill: '#ef4444', fontSize: 12, position: 'top' }} />
 
+                                    <Line type="monotone" dataKey="Nikkei225" stroke="#ff0000" strokeWidth={3} dot={false} name="日経225" />
                                     <Line type="monotone" dataKey="AI_Robot" stroke="#3b82f6" strokeWidth={2} dot={false} name="AI" />
                                     <Line type="monotone" dataKey="Quantum" stroke="#8b5cf6" strokeWidth={2} dot={false} name="量子" />
                                     <Line type="monotone" dataKey="Semi" stroke="#10b981" strokeWidth={2} dot={false} name="半導体" />

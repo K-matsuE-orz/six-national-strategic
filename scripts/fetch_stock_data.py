@@ -146,11 +146,34 @@ def fetch_sector_performance():
                 "tickers": []
             }
 
+    # Fetch Nikkei 225 benchmark
+    print("Fetching Nikkei 225 benchmark...")
+    nikkei_ticker = "^N225"
+    nikkei_data = pd.Series(dtype=float)
+    try:
+        n225 = yf.Ticker(nikkei_ticker)
+        n225_hist = n225.history(start=START_DATE)
+        if not n225_hist.empty:
+            n225_hist = n225_hist['Close'].reindex(common_dates, method='ffill')
+            first_valid_idx = n225_hist.first_valid_index()
+            if first_valid_idx is not None:
+                start_price = n225_hist.loc[first_valid_idx]
+                nikkei_data = ((n225_hist - start_price) / start_price) * 100
+    except Exception as e:
+        print(f"Error fetching Nikkei 225: {e}")
+
     # Process history for JSON output
     history_data = []
     for date in common_dates:
         date_str = date.strftime('%Y-%m-%d')
         entry = {"date": date_str}
+        
+        # Add Nikkei 225
+        if not nikkei_data.empty and date in nikkei_data.index:
+             entry["Nikkei225"] = round(nikkei_data.loc[date], 2)
+        else:
+             entry["Nikkei225"] = 0
+
         for sector in SECTORS:
             count = sector_counts[sector].loc[date]
             if count > 0:
