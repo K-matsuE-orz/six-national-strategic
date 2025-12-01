@@ -1,4 +1,4 @@
-# Sector Voting Game
+# six-national-strategic
 
 国家戦略技術6分野
 GitHub Actionsを使用して毎日、市場が開いている日の17時以降に株価データを自動更新し、実際の市場パフォーマンスを比較できます。
