@@ -62,7 +62,7 @@ function App() {
                     setHistoryData(json.history);
                 }
                 if (json.last_updated) {
-                    setLastUpdated(new Date(json.last_updated).toLocaleString('ja-JP'));
+                    setLastUpdated(new Date(json.last_updated).toLocaleString('ja-JP', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }));
                 }
             } catch (err) {
                 console.error("Failed to load stock data", err);
