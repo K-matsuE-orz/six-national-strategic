@@ -40,6 +40,12 @@ def fetch_sector_performance():
     # Fixed start date for data collection
     START_DATE = "2024-11-26"
     
+    # Ticker merge mapping (New -> Old) for renamed stocks
+    # This allows fetching historical data from the old ticker and new data from the new ticker
+    MERGE_TICKERS = {
+        "464A.T": "5595.T"
+    }
+    
     # Initialize common date index (using a major index like 9984.T as reference)
     ref_ticker = "9984.T"
     ref_data = yf.Ticker(ref_ticker).history(start=START_DATE)
@@ -59,6 +65,20 @@ def fetch_sector_performance():
                 # Fetch data from fixed start date
                 stock = yf.Ticker(ticker)
                 hist = stock.history(start=START_DATE)
+                
+                # Handle merged tickers (e.g. QPS 5595.T -> 464A.T)
+                if ticker in MERGE_TICKERS:
+                    old_ticker = MERGE_TICKERS[ticker]
+                    print(f"  Merging data for {ticker} with old ticker {old_ticker}...")
+                    old_stock = yf.Ticker(old_ticker)
+                    old_hist = old_stock.history(start=START_DATE)
+                    
+                    # Combine old and new history
+                    # Use combine_first or concat. Concat is safer if dates don't overlap much.
+                    # If dates overlap, we prefer the new ticker's data? Or just drop duplicates.
+                    hist = pd.concat([old_hist, hist])
+                    hist = hist[~hist.index.duplicated(keep='last')] # Keep last (newest) entry for same date
+                    hist = hist.sort_index()
                 
                 if len(hist) < 2:
                     print(f"  Warning: Insufficient data for {ticker}")
