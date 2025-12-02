@@ -37,6 +37,7 @@ function App() {
     const [historyData, setHistoryData] = useState([]);
     const [selectedSector, setSelectedSector] = useState(null);
     const [lastUpdated, setLastUpdated] = useState('');
+    const [nikkeiPrice, setNikkeiPrice] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -65,12 +66,44 @@ function App() {
                 if (json.last_updated) {
                     setLastUpdated(new Date(json.last_updated).toLocaleString('ja-JP', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }));
                 }
+                if (json.nikkei_current_price) {
+                    setNikkeiPrice(json.nikkei_current_price);
+                }
             } catch (err) {
                 console.error("Failed to load stock data", err);
             }
         };
         fetchData();
     }, []);
+
+    // Calculate Nikkei change since Tax Cut News
+    const getNikkeiChange = () => {
+        if (!historyData.length) return null;
+        const newsDateStr = "2025-11-26";
+        const newsDataPoint = historyData.find(d => d.date >= newsDateStr) || historyData[historyData.length - 1];
+        const currentDataPoint = historyData[historyData.length - 1];
+
+        if (newsDataPoint && currentDataPoint && newsDataPoint.Nikkei225 !== undefined && currentDataPoint.Nikkei225 !== undefined) {
+            const vNews = newsDataPoint.Nikkei225;
+            const vCurrent = currentDataPoint.Nikkei225;
+            // Nikkei225 in history is already normalized % change from start date.
+            // To get change between two normalized points: (Current - News)
+            // Wait, if they are both % change from start, the difference is roughly the change between them if base is same.
+            // Let's just show the difference in percentage points if that's what "Nikkei225" stores.
+            // Yes, fetch_stock_data.py stores: ((price - start_price) / start_price) * 100
+            // So vCurrent - vNews is the percentage point difference relative to start date.
+            // To get actual % change from News Date: 
+            // Price_news = Start * (1 + vNews/100)
+            // Price_curr = Start * (1 + vCurrent/100)
+            // Change = (Price_curr - Price_news) / Price_news * 100
+            //        = (Start*(1+vCurrent/100) - Start*(1+vNews/100)) / (Start*(1+vNews/100)) * 100
+            //        = (vCurrent - vNews) / (100 + vNews) * 100
+            return ((vCurrent - vNews) / (100 + vNews)) * 100;
+        }
+        return 0;
+    };
+
+    const nikkeiChange = getNikkeiChange();
 
     return (
         <div className="min-h-screen text-white p-4 md:p-8 font-sans selection:bg-blue-500 selection:text-white">
@@ -83,6 +116,15 @@ function App() {
                             Japan Tech 6
                         </h1>
                         <p className="text-gray-400 mt-2 font-medium">国家戦略6分野 株価トラッカー</p>
+                        {nikkeiPrice && (
+                            <div className="mt-2 flex items-center gap-3 text-sm font-medium">
+                                <span className="px-2 py-0.5 rounded bg-red-500/20 text-red-400 border border-red-500/30">日経225</span>
+                                <span className="text-white">¥{nikkeiPrice.toLocaleString()}</span>
+                                <span className={`${nikkeiChange >= 0 ? 'text-red-400' : 'text-green-400'}`}>
+                                    (減税報道比: {nikkeiChange > 0 ? '+' : ''}{nikkeiChange?.toFixed(2)}%)
+                                </span>
+                            </div>
+                        )}
                     </div>
                     <div className="mt-4 md:mt-0 px-4 py-2 bg-white/5 rounded-full border border-white/10 backdrop-blur-sm text-sm text-gray-300">
                         最終更新: {lastUpdated || '読み込み中...'}

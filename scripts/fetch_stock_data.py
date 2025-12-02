@@ -1,7 +1,7 @@
 import yfinance as yf
 import json
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import pandas as pd
 
 # Define sectors and their 10 stocks (Large + Small/Mid Cap)
@@ -183,10 +183,20 @@ def fetch_sector_performance():
                 entry[sector] = 0 # Or null
         history_data.append(entry)
 
+    # Get current Nikkei 225 price
+    nikkei_current_price = 0
+    if not nikkei_data.empty:
+        try:
+             if 'n225_hist' in locals() and not n225_hist.empty:
+                 nikkei_current_price = n225_hist.iloc[-1]
+        except:
+            pass
+
     return {
         "sectors": results, 
         "history": history_data,
-        "last_updated": datetime.now().isoformat()
+        "last_updated": datetime.now(timezone.utc).isoformat(),
+        "nikkei_current_price": round(nikkei_current_price, 2)
     }
 
 if __name__ == "__main__":
