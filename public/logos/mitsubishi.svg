@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <rect width="300" height="100" fill="none"/>
+  <path d="M150 20 L130 80 L170 80 Z" fill="#adadad"/>
+  <text x="50%" y="85" dominant-baseline="hanging" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#adadad">MITSUBISHI</text>
+</svg>

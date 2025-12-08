@@ -32,28 +32,28 @@ const INITIAL_DATA = {
     "Space": { name: "宇宙", change: 0, tickers: [] }
 };
 
-// Large Cap Companies for Logo Slider (Japanese)
-const LARGE_CAP_COMPANIES = [
-    "ソフトバンク", "キーエンス", "ファナック", "SMC", "オムロン",
-    "富士通", "NEC", "NTT", "日立製作所", "三菱電機",
-    "東京エレクトロン", "アドバンテスト", "信越化学", "ディスコ", "レーザーテック",
-    "中外製薬", "第一三共", "武田薬品", "大塚HD", "アステラス製薬",
-    "IHI", "住友電工", "フジクラ", "古河電工", "日揮HD",
-    "三菱重工", "川崎重工", "スカパーJSAT", "キヤノン", "KDDI"
+// Logo Slider Component with SVG Images
+const LOGO_FILES = [
+    "softbank.svg", "keyence.svg", "toyota.svg", "sony.svg", "hitachi.svg",
+    "mitsubishi.svg", "ntt.svg", "fastretailing.svg", "nintendo.svg", "honda.svg"
 ];
 
-// Logo Slider Component
 function LogoSlider() {
-    // Duplicate array for seamless loop
-    const logos = [...LARGE_CAP_COMPANIES, ...LARGE_CAP_COMPANIES];
+    // Duplicate array multiple times for seamless infinity loop coverage
+    // Diagonal scroll covers a lot of distance, so we need many items
+    const logos = [...LOGO_FILES, ...LOGO_FILES, ...LOGO_FILES, ...LOGO_FILES];
 
     return (
         <div className="logo-slider-container">
             <div className="logo-slider">
-                {logos.map((name, i) => (
-                    <span key={i} className="logo-item">
-                        {name}
-                    </span>
+                {logos.map((logo, i) => (
+                    <div key={i} className="logo-item">
+                        <img
+                            src={`logos/${logo}`}
+                            alt="Company Logo"
+                            className="w-auto h-24 opacity-80"
+                        />
+                    </div>
                 ))}
             </div>
         </div>
