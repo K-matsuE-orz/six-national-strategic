@@ -92,6 +92,35 @@
     opacity: 1;
   }
 
+  /* ===== LOGO SLIDER ===== */
+  .logo-slider-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.08;
+  }
+
+  .logo-slider {
+    display: flex;
+    gap: 60px;
+    animation: logo-scroll 60s linear infinite;
+    white-space: nowrap;
+  }
+
+  .logo-item {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    flex-shrink: 0;
+  }
+
   /* ===== SECTOR CARDS ===== */
   .sector-card {
     animation: card-appear 0.6s ease forwards;
@@ -241,6 +270,16 @@
 
   50% {
     opacity: 0.4;
+  }
+}
+
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }
 

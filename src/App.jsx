@@ -32,6 +32,34 @@ const INITIAL_DATA = {
     "Space": { name: "宇宙", change: 0, tickers: [] }
 };
 
+// Large Cap Companies for Logo Slider
+const LARGE_CAP_COMPANIES = [
+    "SoftBank", "KEYENCE", "FANUC", "SMC", "OMRON",
+    "FUJITSU", "NEC", "NTT", "HITACHI", "三菱電機",
+    "東京エレクトロン", "アドバンテスト", "信越化学", "DISCO", "レーザーテック",
+    "中外製薬", "第一三共", "武田薬品", "大塚HD", "アステラス",
+    "IHI", "住友電工", "フジクラ", "古河電工", "日揮HD",
+    "三菱重工", "川崎重工", "スカパー", "Canon", "KDDI"
+];
+
+// Logo Slider Component
+function LogoSlider() {
+    // Duplicate array for seamless loop
+    const logos = [...LARGE_CAP_COMPANIES, ...LARGE_CAP_COMPANIES];
+
+    return (
+        <div className="logo-slider-container">
+            <div className="logo-slider">
+                {logos.map((name, i) => (
+                    <span key={i} className="logo-item">
+                        {name}
+                    </span>
+                ))}
+            </div>
+        </div>
+    );
+}
+
 function App() {
     const [data, setData] = useState(INITIAL_DATA);
     const [historyData, setHistoryData] = useState([]);
@@ -118,6 +146,9 @@ function App() {
 
             {/* Grid Overlay */}
             <div className="grid-overlay" />
+
+            {/* Logo Slider Background */}
+            <LogoSlider />
 
             <div className="max-w-7xl mx-auto space-y-8 relative z-10">
 
