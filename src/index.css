@@ -41,42 +41,45 @@
     box-shadow: 0 0 10px 2px rgba(236, 72, 153, 0.8), 0 0 20px 4px rgba(236, 72, 153, 0.4);
   }
 
-  /* ===== GRADIENT ORBS ===== */
-  .orb {
+  /* ===== LOGO SLIDER (Diagonal) ===== */
+  .logo-slider-container {
     position: fixed;
-    border-radius: 50%;
+    inset: 0;
+    overflow: hidden;
     pointer-events: none;
-    z-index: 1;
+    z-index: 0;
   }
 
-  .orb-1 {
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, rgba(59, 130, 246, 0.1) 40%, transparent 70%);
-    top: -200px;
-    right: -200px;
-    animation: orb-float 20s ease-in-out infinite;
-    filter: blur(40px);
+  .logo-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 80px;
+    animation: logo-scroll-diagonal 40s linear infinite;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: -100%;
   }
 
-  .orb-2 {
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, rgba(139, 92, 246, 0.1) 40%, transparent 70%);
-    bottom: -150px;
-    left: -150px;
-    animation: orb-float 25s ease-in-out infinite reverse;
-    filter: blur(40px);
+  .logo-item {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.12);
+    flex-shrink: 0;
+    text-transform: uppercase;
+    font-family: 'Arial Black', 'Helvetica Neue', sans-serif;
+    text-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
   }
 
-  .orb-3 {
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(236, 72, 153, 0.3) 0%, rgba(236, 72, 153, 0.1) 40%, transparent 70%);
-    top: 40%;
-    left: 30%;
-    animation: orb-pulse 10s ease-in-out infinite;
-    filter: blur(60px);
+  .logo-item:nth-child(odd) {
+    color: rgba(139, 92, 246, 0.12);
+    text-shadow: 0 0 40px rgba(139, 92, 246, 0.3);
+  }
+
+  .logo-item:nth-child(3n) {
+    color: rgba(236, 72, 153, 0.12);
+    text-shadow: 0 0 40px rgba(236, 72, 153, 0.3);
   }
 
   /* ===== GRID OVERLAY ===== */
@@ -84,41 +87,11 @@
     position: fixed;
     inset: 0;
     background-image:
-      linear-gradient(rgba(59, 130, 246, 0.08) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(59, 130, 246, 0.08) 1px, transparent 1px);
+      linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
     background-size: 80px 80px;
     pointer-events: none;
     z-index: 1;
-    opacity: 1;
-  }
-
-  /* ===== LOGO SLIDER ===== */
-  .logo-slider-container {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    overflow: hidden;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.15;
-  }
-
-  .logo-slider {
-    display: flex;
-    gap: 60px;
-    animation: logo-scroll 60s linear infinite;
-    white-space: nowrap;
-  }
-
-  .logo-item {
-    font-size: 3rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: white;
-    flex-shrink: 0;
   }
 
   /* ===== SECTOR CARDS ===== */
@@ -273,13 +246,13 @@
   }
 }
 
-@keyframes logo-scroll {
+@keyframes logo-scroll-diagonal {
   0% {
-    transform: translateX(0);
+    transform: translate(0, 0);
   }
 
   100% {
-    transform: translateX(-50%);
+    transform: translate(-50%, -100px);
   }
 }
 
