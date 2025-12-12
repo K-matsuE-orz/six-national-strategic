@@ -32,33 +32,61 @@ const INITIAL_DATA = {
     "Space": { name: "宇宙", change: 0, tickers: [] }
 };
 
-// 6分野 大型株 (ロゴ表示用)
+// 6分野 大型株 (日本語名 + ロゴ)
 const LARGE_CAP_LOGOS = [
     // AI・ロボット (Blue)
-    { name: "SoftBank", color: "#3b82f6" },
-    { name: "KEYENCE", color: "#3b82f6" },
-    { name: "FANUC", color: "#3b82f6" },
-    { name: "OMRON", color: "#3b82f6" },
+    { name: "ソフトバンク", domain: "softbank.co.jp", color: "#3b82f6" },
+    { name: "キーエンス", domain: "keyence.co.jp", color: "#3b82f6" },
+    { name: "ファナック", domain: "fanuc.co.jp", color: "#3b82f6" },
+    { name: "オムロン", domain: "omron.co.jp", color: "#3b82f6" },
     // 量子技術 (Purple)
-    { name: "FUJITSU", color: "#8b5cf6" },
-    { name: "NEC", color: "#8b5cf6" },
-    { name: "NTT", color: "#8b5cf6" },
-    { name: "HITACHI", color: "#8b5cf6" },
+    { name: "富士通", domain: "fujitsu.com", color: "#8b5cf6" },
+    { name: "NEC", domain: "nec.com", color: "#8b5cf6" },
+    { name: "NTT", domain: "ntt.com", color: "#8b5cf6" },
+    { name: "日立", domain: "hitachi.com", color: "#8b5cf6" },
     // 半導体・通信 (Green)
-    { name: "TEL", color: "#10b981" },
-    { name: "ADVANTEST", color: "#10b981" },
-    { name: "DISCO", color: "#10b981" },
-    { name: "KDDI", color: "#10b981" },
+    { name: "東京エレクトロン", domain: "tel.com", color: "#10b981" },
+    { name: "アドバンテスト", domain: "advantest.com", color: "#10b981" },
+    { name: "ディスコ", domain: "disco.co.jp", color: "#10b981" },
+    { name: "KDDI", domain: "kddi.com", color: "#10b981" },
     // バイオ・ヘルスケア (Pink)
-    { name: "TAKEDA", color: "#ec4899" },
-    { name: "ASTELLAS", color: "#ec4899" },
-    { name: "CHUGAI", color: "#ec4899" },
+    { name: "武田薬品", domain: "takeda.com", color: "#ec4899" },
+    { name: "アステラス", domain: "astellas.com", color: "#ec4899" },
+    { name: "中外製薬", domain: "chugai-pharm.co.jp", color: "#ec4899" },
     // 核融合・宇宙 (Orange/Gray)
-    { name: "MHI", color: "#f59e0b" },
-    { name: "KHI", color: "#f59e0b" },
-    { name: "IHI", color: "#f59e0b" },
-    { name: "CANON", color: "#9ca3af" }
+    { name: "三菱重工", domain: "mhi.com", color: "#f59e0b" },
+    { name: "川崎重工", domain: "khi.co.jp", color: "#f59e0b" },
+    { name: "IHI", domain: "ihi.co.jp", color: "#f59e0b" },
+    { name: "キヤノン", domain: "canon.com", color: "#9ca3af" }
 ];
+
+// ロゴアイテムコンポーネント
+function LogoItem({ company }) {
+    const [imgError, setImgError] = React.useState(false);
+
+    return (
+        <div className="logo-item-vertical">
+            {!imgError ? (
+                <img
+                    src={`https://img.logo.dev/${company.domain}?token=pk_X5Fz_hKTSP2N01OB4P9gxQ`}
+                    alt={company.name}
+                    className="company-logo-img"
+                    onError={() => setImgError(true)}
+                />
+            ) : (
+                <span
+                    className="company-logo-text"
+                    style={{
+                        color: company.color,
+                        textShadow: `0 0 15px ${company.color}`
+                    }}
+                >
+                    {company.name}
+                </span>
+            )}
+        </div>
+    );
+}
 
 // 左側のロゴ（下に流れる）
 function LeftLogoSlider() {
@@ -68,16 +96,7 @@ function LeftLogoSlider() {
         <div className="logo-column logo-column-left">
             <div className="logo-scroll logo-scroll-down">
                 {logos.map((company, i) => (
-                    <div
-                        key={i}
-                        className="logo-item-vertical"
-                        style={{
-                            color: company.color,
-                            textShadow: `0 0 20px ${company.color}, 0 0 40px ${company.color}`
-                        }}
-                    >
-                        {company.name}
-                    </div>
+                    <LogoItem key={i} company={company} />
                 ))}
             </div>
         </div>
@@ -92,16 +111,7 @@ function RightLogoSlider() {
         <div className="logo-column logo-column-right">
             <div className="logo-scroll logo-scroll-up">
                 {logos.map((company, i) => (
-                    <div
-                        key={i}
-                        className="logo-item-vertical"
-                        style={{
-                            color: company.color,
-                            textShadow: `0 0 20px ${company.color}, 0 0 40px ${company.color}`
-                        }}
-                    >
-                        {company.name}
-                    </div>
+                    <LogoItem key={i} company={company} />
                 ))}
             </div>
         </div>
