@@ -32,32 +32,44 @@ const INITIAL_DATA = {
     "Space": { name: "宇宙", change: 0, tickers: [] }
 };
 
-// 6分野 大型株 (日本語名 + ロゴ)
+// 6分野 大型株 (STOCK_NAMESから参照、年間トレンドグラフと同じ色)
 const LARGE_CAP_LOGOS = [
-    // AI・ロボット (Blue)
-    { name: "ソフトバンク", domain: "softbank.co.jp", color: "#3b82f6" },
+    // AI・ロボット - Blue (#3b82f6) - 年間トレンドのAI線と同色
+    { name: "ソフトバンクG", domain: "softbank.co.jp", color: "#3b82f6" },
     { name: "キーエンス", domain: "keyence.co.jp", color: "#3b82f6" },
     { name: "ファナック", domain: "fanuc.co.jp", color: "#3b82f6" },
+    { name: "SMC", domain: "smcworld.com", color: "#3b82f6" },
     { name: "オムロン", domain: "omron.co.jp", color: "#3b82f6" },
-    // 量子技術 (Purple)
+    // 量子技術 - Purple (#8b5cf6) - 年間トレンドの量子線と同色
     { name: "富士通", domain: "fujitsu.com", color: "#8b5cf6" },
     { name: "NEC", domain: "nec.com", color: "#8b5cf6" },
     { name: "NTT", domain: "ntt.com", color: "#8b5cf6" },
-    { name: "日立", domain: "hitachi.com", color: "#8b5cf6" },
-    // 半導体・通信 (Green)
+    { name: "日立製作所", domain: "hitachi.com", color: "#8b5cf6" },
+    { name: "三菱電機", domain: "mitsubishielectric.com", color: "#8b5cf6" },
+    // 半導体・通信 - Green (#10b981) - 年間トレンドの半導体線と同色
     { name: "東京エレクトロン", domain: "tel.com", color: "#10b981" },
     { name: "アドバンテスト", domain: "advantest.com", color: "#10b981" },
+    { name: "信越化学", domain: "shinetsu.co.jp", color: "#10b981" },
     { name: "ディスコ", domain: "disco.co.jp", color: "#10b981" },
-    { name: "KDDI", domain: "kddi.com", color: "#10b981" },
-    // バイオ・ヘルスケア (Pink)
-    { name: "武田薬品", domain: "takeda.com", color: "#ec4899" },
-    { name: "アステラス", domain: "astellas.com", color: "#ec4899" },
+    { name: "レーザーテック", domain: "lasertec.co.jp", color: "#10b981" },
+    // バイオ・ヘルスケア - Pink (#ec4899) - 年間トレンドのバイオ線と同色
     { name: "中外製薬", domain: "chugai-pharm.co.jp", color: "#ec4899" },
-    // 核融合・宇宙 (Orange/Gray)
-    { name: "三菱重工", domain: "mhi.com", color: "#f59e0b" },
-    { name: "川崎重工", domain: "khi.co.jp", color: "#f59e0b" },
+    { name: "第一三共", domain: "daiichisankyo.co.jp", color: "#ec4899" },
+    { name: "武田薬品", domain: "takeda.com", color: "#ec4899" },
+    { name: "大塚HD", domain: "otsuka.com", color: "#ec4899" },
+    { name: "アステラス製薬", domain: "astellas.com", color: "#ec4899" },
+    // 核融合 - Orange (#f59e0b) - 年間トレンドの核融合線と同色
     { name: "IHI", domain: "ihi.co.jp", color: "#f59e0b" },
-    { name: "キヤノン", domain: "canon.com", color: "#9ca3af" }
+    { name: "住友電気工業", domain: "sei.co.jp", color: "#f59e0b" },
+    { name: "フジクラ", domain: "fujikura.co.jp", color: "#f59e0b" },
+    { name: "古河電気工業", domain: "furukawa.co.jp", color: "#f59e0b" },
+    { name: "日揮HD", domain: "jgc.com", color: "#f59e0b" },
+    // 宇宙 - Gray (#9ca3af) - 年間トレンドの宇宙線と同色
+    { name: "三菱重工業", domain: "mhi.com", color: "#9ca3af" },
+    { name: "川崎重工業", domain: "khi.co.jp", color: "#9ca3af" },
+    { name: "スカパーJSAT", domain: "sptvjsat.com", color: "#9ca3af" },
+    { name: "キヤノン", domain: "canon.com", color: "#9ca3af" },
+    { name: "KDDI", domain: "kddi.com", color: "#9ca3af" }
 ];
 
 // ロゴアイテムコンポーネント
