@@ -49,20 +49,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-  }
-
-  .company-logo {
-    width: 80px;
-    height: auto;
-    opacity: 0.3;
-    filter: grayscale(100%) brightness(1.5);
-    transition: all 0.3s ease;
-  }
-
-  .company-logo:hover {
-    opacity: 0.6;
-    filter: grayscale(0%) brightness(1);
+    padding: 15px 5px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+    font-family: 'Inter', 'Arial Black', sans-serif;
+    writing-mode: horizontal-tb;
+    white-space: nowrap;
   }
 
   /* ===== GRID OVERLAY ===== */

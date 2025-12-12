@@ -32,30 +32,32 @@ const INITIAL_DATA = {
     "Space": { name: "宇宙", change: 0, tickers: [] }
 };
 
-// 6分野 大型株 (ロゴ取得可能な企業)
-// Clearbit Logo API: https://logo.clearbit.com/{domain}
+// 6分野 大型株 (ロゴ表示用)
 const LARGE_CAP_LOGOS = [
-    // AI・ロボット
-    { name: "ソフトバンク", domain: "softbank.co.jp" },
-    { name: "キーエンス", domain: "keyence.co.jp" },
-    { name: "ファナック", domain: "fanuc.co.jp" },
-    { name: "オムロン", domain: "omron.co.jp" },
-    // 量子技術
-    { name: "富士通", domain: "fujitsu.com" },
-    { name: "NEC", domain: "nec.com" },
-    { name: "NTT", domain: "ntt.com" },
-    { name: "日立", domain: "hitachi.com" },
-    // 半導体・通信
-    { name: "信越化学", domain: "shinetsu.co.jp" },
-    { name: "KDDI", domain: "kddi.com" },
-    // バイオ・ヘルスケア
-    { name: "武田薬品", domain: "takeda.com" },
-    { name: "アステラス", domain: "astellas.com" },
-    // 核融合・宇宙
-    { name: "三菱重工", domain: "mhi.com" },
-    { name: "川崎重工", domain: "khi.co.jp" },
-    { name: "キヤノン", domain: "canon.com" },
-    { name: "IHI", domain: "ihi.co.jp" }
+    // AI・ロボット (Blue)
+    { name: "SoftBank", color: "#3b82f6" },
+    { name: "KEYENCE", color: "#3b82f6" },
+    { name: "FANUC", color: "#3b82f6" },
+    { name: "OMRON", color: "#3b82f6" },
+    // 量子技術 (Purple)
+    { name: "FUJITSU", color: "#8b5cf6" },
+    { name: "NEC", color: "#8b5cf6" },
+    { name: "NTT", color: "#8b5cf6" },
+    { name: "HITACHI", color: "#8b5cf6" },
+    // 半導体・通信 (Green)
+    { name: "TEL", color: "#10b981" },
+    { name: "ADVANTEST", color: "#10b981" },
+    { name: "DISCO", color: "#10b981" },
+    { name: "KDDI", color: "#10b981" },
+    // バイオ・ヘルスケア (Pink)
+    { name: "TAKEDA", color: "#ec4899" },
+    { name: "ASTELLAS", color: "#ec4899" },
+    { name: "CHUGAI", color: "#ec4899" },
+    // 核融合・宇宙 (Orange/Gray)
+    { name: "MHI", color: "#f59e0b" },
+    { name: "KHI", color: "#f59e0b" },
+    { name: "IHI", color: "#f59e0b" },
+    { name: "CANON", color: "#9ca3af" }
 ];
 
 // 左側のロゴ（下に流れる）
@@ -66,13 +68,15 @@ function LeftLogoSlider() {
         <div className="logo-column logo-column-left">
             <div className="logo-scroll logo-scroll-down">
                 {logos.map((company, i) => (
-                    <div key={i} className="logo-item-vertical">
-                        <img
-                            src={`https://logo.clearbit.com/${company.domain}`}
-                            alt={company.name}
-                            className="company-logo"
-                            onError={(e) => { e.target.style.display = 'none'; }}
-                        />
+                    <div
+                        key={i}
+                        className="logo-item-vertical"
+                        style={{
+                            color: company.color,
+                            textShadow: `0 0 20px ${company.color}, 0 0 40px ${company.color}`
+                        }}
+                    >
+                        {company.name}
                     </div>
                 ))}
             </div>
@@ -88,13 +92,15 @@ function RightLogoSlider() {
         <div className="logo-column logo-column-right">
             <div className="logo-scroll logo-scroll-up">
                 {logos.map((company, i) => (
-                    <div key={i} className="logo-item-vertical">
-                        <img
-                            src={`https://logo.clearbit.com/${company.domain}`}
-                            alt={company.name}
-                            className="company-logo"
-                            onError={(e) => { e.target.style.display = 'none'; }}
-                        />
+                    <div
+                        key={i}
+                        className="logo-item-vertical"
+                        style={{
+                            color: company.color,
+                            textShadow: `0 0 20px ${company.color}, 0 0 40px ${company.color}`
+                        }}
+                    >
+                        {company.name}
                     </div>
                 ))}
             </div>
