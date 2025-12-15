@@ -32,59 +32,76 @@ const INITIAL_DATA = {
     "Space": { name: "宇宙", change: 0, tickers: [] }
 };
 
-// 6分野 大型株 (STOCK_NAMESから参照、年間トレンドグラフと同じ色)
+// 6分野 大型株 (Simple Icons用スラッグを追加)
 const LARGE_CAP_LOGOS = [
-    // AI・ロボット - Blue (#3b82f6) - 年間トレンドのAI線と同色
-    { name: "ソフトバンクG", domain: "softbank.co.jp", color: "#3b82f6" },
-    { name: "キーエンス", domain: "keyence.co.jp", color: "#3b82f6" },
-    { name: "ファナック", domain: "fanuc.co.jp", color: "#3b82f6" },
-    { name: "SMC", domain: "smcworld.com", color: "#3b82f6" },
-    { name: "オムロン", domain: "omron.co.jp", color: "#3b82f6" },
-    // 量子技術 - Purple (#8b5cf6) - 年間トレンドの量子線と同色
-    { name: "富士通", domain: "fujitsu.com", color: "#8b5cf6" },
-    { name: "NEC", domain: "nec.com", color: "#8b5cf6" },
-    { name: "NTT", domain: "ntt.com", color: "#8b5cf6" },
-    { name: "日立製作所", domain: "hitachi.com", color: "#8b5cf6" },
-    { name: "三菱電機", domain: "mitsubishielectric.com", color: "#8b5cf6" },
-    // 半導体・通信 - Green (#10b981) - 年間トレンドの半導体線と同色
-    { name: "東京エレクトロン", domain: "tel.com", color: "#10b981" },
-    { name: "アドバンテスト", domain: "advantest.com", color: "#10b981" },
-    { name: "信越化学", domain: "shinetsu.co.jp", color: "#10b981" },
-    { name: "ディスコ", domain: "disco.co.jp", color: "#10b981" },
-    { name: "レーザーテック", domain: "lasertec.co.jp", color: "#10b981" },
-    // バイオ・ヘルスケア - Pink (#ec4899) - 年間トレンドのバイオ線と同色
-    { name: "中外製薬", domain: "chugai-pharm.co.jp", color: "#ec4899" },
-    { name: "第一三共", domain: "daiichisankyo.co.jp", color: "#ec4899" },
-    { name: "武田薬品", domain: "takeda.com", color: "#ec4899" },
-    { name: "大塚HD", domain: "otsuka.com", color: "#ec4899" },
-    { name: "アステラス製薬", domain: "astellas.com", color: "#ec4899" },
-    // 核融合 - Orange (#f59e0b) - 年間トレンドの核融合線と同色
-    { name: "IHI", domain: "ihi.co.jp", color: "#f59e0b" },
-    { name: "住友電気工業", domain: "sei.co.jp", color: "#f59e0b" },
-    { name: "フジクラ", domain: "fujikura.co.jp", color: "#f59e0b" },
-    { name: "古河電気工業", domain: "furukawa.co.jp", color: "#f59e0b" },
-    { name: "日揮HD", domain: "jgc.com", color: "#f59e0b" },
-    // 宇宙 - Gray (#9ca3af) - 年間トレンドの宇宙線と同色
-    { name: "三菱重工業", domain: "mhi.com", color: "#9ca3af" },
-    { name: "川崎重工業", domain: "khi.co.jp", color: "#9ca3af" },
-    { name: "スカパーJSAT", domain: "sptvjsat.com", color: "#9ca3af" },
-    { name: "キヤノン", domain: "canon.com", color: "#9ca3af" },
-    { name: "KDDI", domain: "kddi.com", color: "#9ca3af" }
+    // AI・ロボット - Blue (#3b82f6)
+    { name: "ソフトバンクG", slug: "softbank", color: "#3b82f6" },
+    { name: "キーエンス", slug: "keyence", color: "#3b82f6" }, // ない可能性大→テキスト
+    { name: "ファナック", slug: "fanuc", color: "#3b82f6" },   // ない可能性大→テキスト
+    { name: "SMC", slug: "smc", color: "#3b82f6" },
+    { name: "オムロン", slug: "omron", color: "#3b82f6" },
+    // 量子技術 - Purple (#8b5cf6)
+    { name: "富士通", slug: "fujitsu", color: "#8b5cf6" },
+    { name: "NEC", slug: "nec", color: "#8b5cf6" },
+    { name: "NTT", slug: "nippontelegraphandtelephone", color: "#8b5cf6" }, // NTTは長いスラッグの場合あり
+    { name: "日立製作所", slug: "hitachi", color: "#8b5cf6" },
+    { name: "三菱電機", slug: "mitsubishielectric", color: "#8b5cf6" },
+    // 半導体・通信 - Green (#10b981)
+    { name: "東京エレクトロン", slug: "tokyoelectron", color: "#10b981" },
+    { name: "アドバンテスト", slug: "advantest", color: "#10b981" },
+    { name: "信越化学", slug: "shinetsachemical", color: "#10b981" },
+    { name: "ディスコ", slug: "disco", color: "#10b981" },
+    { name: "レーザーテック", slug: "lasertec", color: "#10b981" },
+    // バイオ・ヘルスケア - Pink (#ec4899)
+    { name: "中外製薬", slug: "chugaipharmaceutical", color: "#ec4899" },
+    { name: "第一三共", slug: "daiichisankyo", color: "#ec4899" },
+    { name: "武田薬品", slug: "takeda", color: "#ec4899" },
+    { name: "大塚HD", slug: "otsuka", color: "#ec4899" },
+    { name: "アステラス製薬", slug: "astellas", color: "#ec4899" },
+    // 核融合 - Orange (#f59e0b)
+    { name: "IHI", slug: "ihi", color: "#f59e0b" },
+    { name: "住友電気工業", slug: "sumitomo", color: "#f59e0b" },
+    { name: "フジクラ", slug: "fujikura", color: "#f59e0b" },
+    { name: "古河電気工業", slug: "furukawa", color: "#f59e0b" },
+    { name: "日揮HD", slug: "jgc", color: "#f59e0b" },
+    // 宇宙 - Gray (#9ca3af)
+    { name: "三菱重工業", slug: "mitsubishiheavyindustries", color: "#9ca3af" },
+    { name: "川崎重工業", slug: "kawasaki", color: "#9ca3af" },
+    { name: "スカパーJSAT", slug: "skyperfectjsat", color: "#9ca3af" },
+    { name: "キヤノン", slug: "canon", color: "#9ca3af" },
+    { name: "KDDI", slug: "kddi", color: "#9ca3af" }
 ];
 
-// ロゴアイテムコンポーネント - 安定性のためテキストロゴに統一
+// ロゴアイテムコンポーネント - Simple Icons CDNを使用
 function LogoItem({ company }) {
+    const [imgError, setImgError] = React.useState(false);
+
+    // Simple Icons CDN: https://cdn.simpleicons.org/[slug]/[color]
+    // 色指定もできるが、まずは白(white)またはデフォルト色で取得して、CSSで色を調整する手もある
+    // ここではあえてアイコン自体の色を使うため色指定なし、または視認性のため白にする
+    const logoUrl = `https://cdn.simpleicons.org/${company.slug}/${company.color.replace('#', '')}`;
+
     return (
         <div className="logo-item-vertical">
-            <span
-                className="company-logo-text"
-                style={{
-                    color: company.color,
-                    textShadow: `0 0 15px ${company.color}`
-                }}
-            >
-                {company.name}
-            </span>
+            {!imgError ? (
+                <img
+                    src={logoUrl}
+                    alt={company.name}
+                    className="company-logo-img"
+                    onError={() => setImgError(true)}
+                    style={{ filter: 'drop-shadow(0 0 5px rgba(255,255,255,0.2))' }} // 少し発光させる
+                />
+            ) : (
+                <span
+                    className="company-logo-text"
+                    style={{
+                        color: company.color,
+                        textShadow: `0 0 15px ${company.color}`
+                    }}
+                >
+                    {company.name}
+                </span>
+            )}
         </div>
     );
 }
