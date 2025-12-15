@@ -72,18 +72,39 @@ const LARGE_CAP_LOGOS = [
     { name: "KDDI", domain: "kddi.com", color: "#9ca3af" }
 ];
 
-// ロゴアイテムコンポーネント
+// ロゴアイテムコンポーネント - 複数のソースを試す
 function LogoItem({ company }) {
-    const [imgError, setImgError] = React.useState(false);
+    const [logoSrc, setLogoSrc] = React.useState(null);
+    const [fallbackIndex, setFallbackIndex] = React.useState(0);
+
+    // ロゴ取得ソースの優先順位
+    const logoSources = [
+        `https://logo.clearbit.com/${company.domain}`,
+        `https://www.google.com/s2/favicons?domain=${company.domain}&sz=128`,
+    ];
+
+    React.useEffect(() => {
+        setLogoSrc(logoSources[0]);
+        setFallbackIndex(0);
+    }, [company.domain]);
+
+    const handleError = () => {
+        if (fallbackIndex < logoSources.length - 1) {
+            setFallbackIndex(prev => prev + 1);
+            setLogoSrc(logoSources[fallbackIndex + 1]);
+        } else {
+            setLogoSrc(null); // 全て失敗 → テキスト表示
+        }
+    };
 
     return (
         <div className="logo-item-vertical">
-            {!imgError ? (
+            {logoSrc ? (
                 <img
-                    src={`https://img.logo.dev/${company.domain}?token=pk_X5Fz_hKTSP2N01OB4P9gxQ`}
+                    src={logoSrc}
                     alt={company.name}
                     className="company-logo-img"
-                    onError={() => setImgError(true)}
+                    onError={handleError}
                 />
             ) : (
                 <span
