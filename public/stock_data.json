@@ -1,332 +1,332 @@
 {
   "sectors": {
     "AI_Robot": {
-      "change_percent": -2.14,
+      "change_percent": -1.51,
       "tickers": [
         {
           "ticker": "9984.T",
-          "change": -6.31,
-          "price": 3692.0
+          "change": -3.71,
+          "price": 3555.0
         },
         {
           "ticker": "6861.T",
-          "change": -3.42,
-          "price": 55370.0
+          "change": -0.92,
+          "price": 54860.0
         },
         {
           "ticker": "6954.T",
-          "change": -4.22,
-          "price": 5486.0
+          "change": -3.35,
+          "price": 5302.0
         },
         {
           "ticker": "6273.T",
-          "change": -1.88,
-          "price": 61050.0
+          "change": -1.93,
+          "price": 59870.0
         },
         {
           "ticker": "6645.T",
-          "change": -1.61,
-          "price": 4346.0
+          "change": 1.98,
+          "price": 4432.0
         },
         {
           "ticker": "3993.T",
-          "change": -5.63,
-          "price": 2630.0
+          "change": 0.84,
+          "price": 2652.0
         },
         {
           "ticker": "4180.T",
-          "change": -1.68,
-          "price": 759.0
+          "change": 3.03,
+          "price": 782.0
         },
         {
           "ticker": "247A.T",
-          "change": 3.77,
-          "price": 1350.0
+          "change": -11.19,
+          "price": 1199.0
         },
         {
           "ticker": "4382.T",
-          "change": -1.9,
-          "price": 824.0
+          "change": 1.21,
+          "price": 834.0
         },
         {
           "ticker": "4011.T",
-          "change": 1.51,
-          "price": 2284.0
+          "change": -1.05,
+          "price": 2260.0
         }
       ]
     },
     "Quantum": {
-      "change_percent": -2.96,
+      "change_percent": -0.43,
       "tickers": [
         {
           "ticker": "6702.T",
-          "change": -3.4,
-          "price": 3121.0
+          "change": 1.63,
+          "price": 3172.0
         },
         {
           "ticker": "6701.T",
-          "change": -4.66,
-          "price": 3789.0
+          "change": 1.5,
+          "price": 3846.0
         },
         {
           "ticker": "9432.T",
-          "change": -0.03,
-          "price": 156.3
+          "change": 0.58,
+          "price": 157.2
         },
         {
           "ticker": "6501.T",
-          "change": -3.88,
-          "price": 4533.0
+          "change": -1.52,
+          "price": 4464.0
         },
         {
           "ticker": "6503.T",
-          "change": -4.96,
-          "price": 5042.0
+          "change": -1.07,
+          "price": 4988.0
         },
         {
           "ticker": "3687.T",
-          "change": -2.98,
-          "price": 1206.0
+          "change": -0.91,
+          "price": 1195.0
         },
         {
           "ticker": "6597.T",
-          "change": -4.21,
-          "price": 1640.0
+          "change": -1.34,
+          "price": 1618.0
         },
         {
           "ticker": "6521.T",
-          "change": -3.89,
-          "price": 4200.0
+          "change": 0.83,
+          "price": 4235.0
         },
         {
           "ticker": "7713.T",
-          "change": -1.55,
-          "price": 1904.0
+          "change": -3.26,
+          "price": 1842.0
         },
         {
           "ticker": "2693.T",
-          "change": 0.0,
-          "price": 255.0
+          "change": -0.78,
+          "price": 253.0
         }
       ]
     },
     "Semi": {
-      "change_percent": -2.27,
+      "change_percent": -2.92,
       "tickers": [
         {
           "ticker": "8035.T",
-          "change": -0.29,
-          "price": 38840.0
+          "change": -4.15,
+          "price": 37230.0
         },
         {
           "ticker": "6857.T",
-          "change": -5.19,
-          "price": 20925.0
+          "change": -2.84,
+          "price": 20330.0
         },
         {
           "ticker": "4063.T",
-          "change": 2.14,
-          "price": 6217.0
+          "change": 0.68,
+          "price": 6259.0
         },
         {
           "ticker": "6146.T",
-          "change": -2.98,
-          "price": 64250.0
+          "change": -4.68,
+          "price": 61240.0
         },
         {
           "ticker": "6920.T",
-          "change": 0.94,
-          "price": 35300.0
+          "change": -5.52,
+          "price": 33350.0
         },
         {
           "ticker": "6323.T",
-          "change": -4.14,
-          "price": 2569.5
+          "change": 0.02,
+          "price": 2570.0
         },
         {
           "ticker": "6315.T",
-          "change": -3.58,
-          "price": 2291.0
+          "change": -3.14,
+          "price": 2219.0
         },
         {
           "ticker": "4369.T",
-          "change": -1.97,
-          "price": 2687.0
+          "change": -2.16,
+          "price": 2629.0
         },
         {
           "ticker": "6871.T",
-          "change": -3.51,
-          "price": 9610.0
+          "change": -3.85,
+          "price": 9240.0
         },
         {
           "ticker": "6266.T",
-          "change": -4.17,
-          "price": 2162.0
+          "change": -3.52,
+          "price": 2086.0
         }
       ]
     },
     "Bio": {
-      "change_percent": -2.13,
+      "change_percent": -1.11,
       "tickers": [
         {
           "ticker": "4519.T",
-          "change": 1.41,
-          "price": 8660.0
+          "change": -0.57,
+          "price": 8611.0
         },
         {
           "ticker": "4568.T",
-          "change": -2.58,
-          "price": 2816.5
+          "change": -1.79,
+          "price": 2766.0
         },
         {
           "ticker": "4502.T",
-          "change": -0.47,
-          "price": 5713.0
+          "change": -0.86,
+          "price": 5664.0
         },
         {
           "ticker": "4578.T",
-          "change": -1.36,
-          "price": 11245.0
+          "change": -2.09,
+          "price": 11010.0
         },
         {
           "ticker": "4503.T",
-          "change": -0.47,
-          "price": 2558.5
+          "change": -1.54,
+          "price": 2519.0
         },
         {
           "ticker": "4587.T",
-          "change": -2.05,
-          "price": 1172.0
+          "change": 2.18,
+          "price": 1197.5
         },
         {
           "ticker": "2160.T",
-          "change": -5.85,
-          "price": 3060.0
+          "change": -3.92,
+          "price": 2940.0
         },
         {
           "ticker": "4552.T",
-          "change": -2.54,
-          "price": 576.0
+          "change": -1.39,
+          "price": 568.0
         },
         {
           "ticker": "4592.T",
-          "change": -2.82,
-          "price": 1827.0
+          "change": -2.52,
+          "price": 1781.0
         },
         {
           "ticker": "4599.T",
-          "change": -4.62,
-          "price": 289.0
+          "change": 1.38,
+          "price": 293.0
         }
       ]
     },
     "Fusion": {
-      "change_percent": -1.48,
+      "change_percent": -4.37,
       "tickers": [
         {
           "ticker": "7013.T",
-          "change": -5.21,
-          "price": 3308.0
+          "change": -5.14,
+          "price": 3138.0
         },
         {
           "ticker": "5802.T",
-          "change": -4.38,
-          "price": 9000.0
+          "change": -6.89,
+          "price": 8380.0
         },
         {
           "ticker": "5803.T",
-          "change": 0.45,
-          "price": 4505.0
+          "change": -9.21,
+          "price": 4090.0
         },
         {
           "ticker": "5801.T",
-          "change": 0.72,
-          "price": 30950.0
+          "change": -7.0,
+          "price": 28785.0
         },
         {
           "ticker": "1963.T",
-          "change": 4.25,
-          "price": 2246.5
+          "change": 1.14,
+          "price": 2272.0
         },
         {
           "ticker": "5310.T",
-          "change": -3.86,
-          "price": 5230.0
+          "change": -3.25,
+          "price": 5060.0
         },
         {
           "ticker": "7711.T",
-          "change": 0.08,
-          "price": 6650.0
+          "change": -4.66,
+          "price": 6340.0
         },
         {
           "ticker": "3446.T",
-          "change": -5.93,
-          "price": 1871.0
+          "change": -1.92,
+          "price": 1835.0
         },
         {
           "ticker": "6378.T",
-          "change": 0.63,
-          "price": 1607.0
+          "change": -5.54,
+          "price": 1518.0
         },
         {
           "ticker": "6864.T",
-          "change": -1.54,
-          "price": 1339.0
+          "change": -1.27,
+          "price": 1322.0
         }
       ]
     },
     "Space": {
-      "change_percent": -5.57,
+      "change_percent": -2.68,
       "tickers": [
         {
           "ticker": "7011.T",
-          "change": -3.22,
-          "price": 4418.0
+          "change": -4.41,
+          "price": 4223.0
         },
         {
           "ticker": "7012.T",
-          "change": -1.05,
-          "price": 2917.0
+          "change": -0.69,
+          "price": 2897.0
         },
         {
           "ticker": "9412.T",
-          "change": -3.34,
-          "price": 2926.0
+          "change": -1.13,
+          "price": 2893.0
         },
         {
           "ticker": "7751.T",
-          "change": -1.94,
-          "price": 4354.0
+          "change": 0.07,
+          "price": 4357.0
         },
         {
           "ticker": "9433.T",
-          "change": 0.97,
-          "price": 2709.0
+          "change": 0.54,
+          "price": 2723.5
         },
         {
           "ticker": "9348.T",
-          "change": -17.67,
-          "price": 466.0
+          "change": -6.65,
+          "price": 435.0
         },
         {
           "ticker": "464A.T",
-          "change": -7.18,
-          "price": 2133.0
+          "change": -3.28,
+          "price": 2063.0
         },
         {
           "ticker": "186A.T",
-          "change": -7.68,
-          "price": 913.0
+          "change": -4.27,
+          "price": 874.0
         },
         {
           "ticker": "290A.T",
-          "change": -9.43,
-          "price": 1105.0
+          "change": -2.99,
+          "price": 1072.0
         },
         {
           "ticker": "402A.T",
-          "change": -5.2,
-          "price": 529.0
+          "change": -3.97,
+          "price": 508.0
         }
       ]
     }
@@ -1139,8 +1139,8 @@
       "Quantum": 5.69,
       "Semi": -12.14,
       "Bio": -2.64,
-      "Fusion": 3.25,
-      "Space": 14.37
+      "Fusion": 2.58,
+      "Space": 13.74
     },
     {
       "date": "2025-03-31",
@@ -1149,8 +1149,8 @@
       "Quantum": 2.99,
       "Semi": -17.7,
       "Bio": -5.17,
-      "Fusion": -0.97,
-      "Space": 12.46
+      "Fusion": -1.61,
+      "Space": 11.86
     },
     {
       "date": "2025-04-01",
@@ -1159,8 +1159,8 @@
       "Quantum": 2.96,
       "Semi": -18.55,
       "Bio": -4.1,
-      "Fusion": -2.33,
-      "Space": 9.9
+      "Fusion": -2.95,
+      "Space": 9.31
     },
     {
       "date": "2025-04-02",
@@ -1169,8 +1169,8 @@
       "Quantum": 2.74,
       "Semi": -18.48,
       "Bio": -6.73,
-      "Fusion": -1.15,
-      "Space": 14.54
+      "Fusion": -1.78,
+      "Space": 13.93
     },
     {
       "date": "2025-04-03",
@@ -1179,8 +1179,8 @@
       "Quantum": -0.54,
       "Semi": -22.18,
       "Bio": -7.22,
-      "Fusion": -6.23,
-      "Space": 12.78
+      "Fusion": -6.8,
+      "Space": 12.21
     },
     {
       "date": "2025-04-04",
@@ -1189,8 +1189,8 @@
       "Quantum": -5.19,
       "Semi": -27.78,
       "Bio": -9.14,
-      "Fusion": -12.75,
-      "Space": 6.38
+      "Fusion": -13.25,
+      "Space": 5.88
     },
     {
       "date": "2025-04-07",
@@ -1199,8 +1199,8 @@
       "Quantum": -14.81,
       "Semi": -36.7,
       "Bio": -17.98,
-      "Fusion": -23.28,
-      "Space": -2.99
+      "Fusion": -23.7,
+      "Space": -3.41
     },
     {
       "date": "2025-04-08",
@@ -1209,8 +1209,8 @@
       "Quantum": -7.98,
       "Semi": -28.73,
       "Bio": -12.14,
-      "Fusion": -13.9,
-      "Space": 6.77
+      "Fusion": -14.41,
+      "Space": 6.31
     },
     {
       "date": "2025-04-09",
@@ -1219,8 +1219,8 @@
       "Quantum": -11.1,
       "Semi": -33.04,
       "Bio": -16.84,
-      "Fusion": -18.17,
-      "Space": 3.18
+      "Fusion": -18.64,
+      "Space": 2.74
     },
     {
       "date": "2025-04-10",
@@ -1229,8 +1229,8 @@
       "Quantum": -2.2,
       "Semi": -24.65,
       "Bio": -11.66,
-      "Fusion": -10.23,
-      "Space": 15.08
+      "Fusion": -10.78,
+      "Space": 14.58
     },
     {
       "date": "2025-04-11",
@@ -1239,8 +1239,8 @@
       "Quantum": -2.62,
       "Semi": -25.19,
       "Bio": -12.69,
-      "Fusion": -10.84,
-      "Space": 15.36
+      "Fusion": -11.39,
+      "Space": 14.85
     },
     {
       "date": "2025-04-14",
@@ -1249,8 +1249,8 @@
       "Quantum": -1.04,
       "Semi": -21.91,
       "Bio": -8.94,
-      "Fusion": -10.83,
-      "Space": 14.61
+      "Fusion": -11.38,
+      "Space": 14.11
     },
     {
       "date": "2025-04-15",
@@ -1259,8 +1259,8 @@
       "Quantum": -0.35,
       "Semi": -22.01,
       "Bio": -7.04,
-      "Fusion": -9.78,
-      "Space": 18.88
+      "Fusion": -10.34,
+      "Space": 18.35
     },
     {
       "date": "2025-04-16",
@@ -1269,8 +1269,8 @@
       "Quantum": -1.29,
       "Semi": -25.85,
       "Bio": -7.93,
-      "Fusion": -11.77,
-      "Space": 17.91
+      "Fusion": -12.31,
+      "Space": 17.4
     },
     {
       "date": "2025-04-17",
@@ -1279,8 +1279,8 @@
       "Quantum": -0.14,
       "Semi": -24.17,
       "Bio": -5.18,
-      "Fusion": -10.12,
-      "Space": 25.4
+      "Fusion": -10.66,
+      "Space": 24.85
     },
     {
       "date": "2025-04-18",
@@ -1289,8 +1289,8 @@
       "Quantum": 1.66,
       "Semi": -24.92,
       "Bio": 0.68,
-      "Fusion": -8.8,
-      "Space": 27.23
+      "Fusion": -9.35,
+      "Space": 26.69
     },
     {
       "date": "2025-04-21",
@@ -1299,8 +1299,8 @@
       "Quantum": 0.98,
       "Semi": -25.73,
       "Bio": -0.72,
-      "Fusion": -10.26,
-      "Space": 23.84
+      "Fusion": -10.8,
+      "Space": 23.31
     },
     {
       "date": "2025-04-22",
@@ -1309,8 +1309,8 @@
       "Quantum": 0.55,
       "Semi": -26.9,
       "Bio": -0.04,
-      "Fusion": -10.93,
-      "Space": 20.45
+      "Fusion": -11.45,
+      "Space": 19.92
     },
     {
       "date": "2025-04-23",
@@ -1319,8 +1319,8 @@
       "Quantum": 1.92,
       "Semi": -24.5,
       "Bio": -1.48,
-      "Fusion": -8.6,
-      "Space": 23.39
+      "Fusion": -9.15,
+      "Space": 22.86
     },
     {
       "date": "2025-04-24",
@@ -1329,8 +1329,8 @@
       "Quantum": 1.88,
       "Semi": -23.08,
       "Bio": -3.45,
-      "Fusion": -7.31,
-      "Space": 25.54
+      "Fusion": -7.88,
+      "Space": 25.0
     },
     {
       "date": "2025-04-25",
@@ -1339,8 +1339,8 @@
       "Quantum": 4.3,
       "Semi": -19.46,
       "Bio": -0.63,
-      "Fusion": -4.53,
-      "Space": 29.75
+      "Fusion": -5.15,
+      "Space": 29.19
     },
     {
       "date": "2025-04-28",
@@ -1349,8 +1349,8 @@
       "Quantum": 4.86,
       "Semi": -20.83,
       "Bio": -0.86,
-      "Fusion": -3.75,
-      "Space": 29.72
+      "Fusion": -4.36,
+      "Space": 29.15
     },
     {
       "date": "2025-04-30",
@@ -1359,8 +1359,8 @@
       "Quantum": 5.99,
       "Semi": -20.48,
       "Bio": 0.07,
-      "Fusion": -3.51,
-      "Space": 30.5
+      "Fusion": -4.13,
+      "Space": 29.93
     },
     {
       "date": "2025-05-01",
@@ -1369,8 +1369,8 @@
       "Quantum": 6.9,
       "Semi": -18.27,
       "Bio": 4.46,
-      "Fusion": -2.18,
-      "Space": 34.53
+      "Fusion": -2.83,
+      "Space": 33.96
     },
     {
       "date": "2025-05-02",
@@ -1379,8 +1379,8 @@
       "Quantum": 6.42,
       "Semi": -18.58,
       "Bio": 5.43,
-      "Fusion": -2.48,
-      "Space": 34.34
+      "Fusion": -3.13,
+      "Space": 33.77
     },
     {
       "date": "2025-05-07",
@@ -1389,8 +1389,8 @@
       "Quantum": 8.03,
       "Semi": -18.36,
       "Bio": 3.32,
-      "Fusion": -1.75,
-      "Space": 31.06
+      "Fusion": -2.42,
+      "Space": 30.5
     },
     {
       "date": "2025-05-08",
@@ -1399,8 +1399,8 @@
       "Quantum": 8.84,
       "Semi": -15.82,
       "Bio": 2.06,
-      "Fusion": 1.26,
-      "Space": 33.0
+      "Fusion": 0.57,
+      "Space": 32.43
     },
     {
       "date": "2025-05-09",
@@ -1409,8 +1409,8 @@
       "Quantum": 11.1,
       "Semi": -15.08,
       "Bio": 3.56,
-      "Fusion": 2.61,
-      "Space": 32.22
+      "Fusion": 1.9,
+      "Space": 31.67
     },
     {
       "date": "2025-05-12",
@@ -1419,8 +1419,8 @@
       "Quantum": 11.2,
       "Semi": -10.93,
       "Bio": -0.97,
-      "Fusion": 5.64,
-      "Space": 39.67
+      "Fusion": 4.92,
+      "Space": 39.08
     },
     {
       "date": "2025-05-13",
@@ -1429,18 +1429,18 @@
       "Quantum": 10.76,
       "Semi": -8.52,
       "Bio": 4.0,
-      "Fusion": 5.89,
-      "Space": 40.64
+      "Fusion": 5.21,
+      "Space": 40.03
     },
     {
       "date": "2025-05-14",
       "Nikkei225": -0.82,
       "AI_Robot": -1.72,
-      "Quantum": 11.03,
+      "Quantum": 11.02,
       "Semi": -4.71,
       "Bio": 2.28,
-      "Fusion": 6.54,
-      "Space": 41.04
+      "Fusion": 5.84,
+      "Space": 40.45
     },
     {
       "date": "2025-05-15",
@@ -1449,8 +1449,8 @@
       "Quantum": 12.3,
       "Semi": -6.55,
       "Bio": 2.85,
-      "Fusion": 5.9,
-      "Space": 47.97
+      "Fusion": 5.22,
+      "Space": 47.37
     },
     {
       "date": "2025-05-16",
@@ -1459,8 +1459,8 @@
       "Quantum": 12.99,
       "Semi": -8.53,
       "Bio": 3.28,
-      "Fusion": 6.06,
-      "Space": 49.66
+      "Fusion": 5.38,
+      "Space": 49.06
     },
     {
       "date": "2025-05-19",
@@ -1469,8 +1469,8 @@
       "Quantum": 14.2,
       "Semi": -10.52,
       "Bio": 7.65,
-      "Fusion": 6.68,
-      "Space": 48.14
+      "Fusion": 6.0,
+      "Space": 47.54
     },
     {
       "date": "2025-05-20",
@@ -1479,8 +1479,8 @@
       "Quantum": 14.34,
       "Semi": -9.62,
       "Bio": 12.06,
-      "Fusion": 8.7,
-      "Space": 47.52
+      "Fusion": 7.98,
+      "Space": 46.93
     },
     {
       "date": "2025-05-21",
@@ -1489,8 +1489,8 @@
       "Quantum": 13.23,
       "Semi": -11.42,
       "Bio": 9.66,
-      "Fusion": 9.18,
-      "Space": 52.22
+      "Fusion": 8.47,
+      "Space": 51.61
     },
     {
       "date": "2025-05-22",
@@ -1499,8 +1499,8 @@
       "Quantum": 13.06,
       "Semi": -12.09,
       "Bio": 9.46,
-      "Fusion": 9.59,
-      "Space": 48.18
+      "Fusion": 8.89,
+      "Space": 47.57
     },
     {
       "date": "2025-05-23",
@@ -1509,8 +1509,8 @@
       "Quantum": 16.6,
       "Semi": -11.98,
       "Bio": 10.05,
-      "Fusion": 13.28,
-      "Space": 48.48
+      "Fusion": 12.55,
+      "Space": 47.86
     },
     {
       "date": "2025-05-26",
@@ -1519,8 +1519,8 @@
       "Quantum": 19.01,
       "Semi": -9.01,
       "Bio": 13.58,
-      "Fusion": 13.58,
-      "Space": 46.07
+      "Fusion": 12.84,
+      "Space": 45.43
     },
     {
       "date": "2025-05-27",
@@ -1529,8 +1529,8 @@
       "Quantum": 22.64,
       "Semi": -9.07,
       "Bio": 15.64,
-      "Fusion": 16.21,
-      "Space": 50.16
+      "Fusion": 15.45,
+      "Space": 49.48
     },
     {
       "date": "2025-05-28",
@@ -1539,8 +1539,8 @@
       "Quantum": 23.61,
       "Semi": -8.76,
       "Bio": 18.14,
-      "Fusion": 15.5,
-      "Space": 55.0
+      "Fusion": 14.73,
+      "Space": 54.34
     },
     {
       "date": "2025-05-29",
@@ -1549,8 +1549,8 @@
       "Quantum": 24.45,
       "Semi": -6.18,
       "Bio": 17.83,
-      "Fusion": 17.89,
-      "Space": 51.09
+      "Fusion": 17.08,
+      "Space": 50.41
     },
     {
       "date": "2025-05-30",
@@ -1559,8 +1559,8 @@
       "Quantum": 27.03,
       "Semi": -9.15,
       "Bio": 17.03,
-      "Fusion": 17.67,
-      "Space": 51.21
+      "Fusion": 16.88,
+      "Space": 50.53
     },
     {
       "date": "2025-06-02",
@@ -1569,8 +1569,8 @@
       "Quantum": 24.11,
       "Semi": -11.75,
       "Bio": 18.78,
-      "Fusion": 17.34,
-      "Space": 49.09
+      "Fusion": 16.54,
+      "Space": 48.4
     },
     {
       "date": "2025-06-03",
@@ -1579,8 +1579,8 @@
       "Quantum": 24.05,
       "Semi": -10.79,
       "Bio": 19.05,
-      "Fusion": 18.41,
-      "Space": 56.35
+      "Fusion": 17.63,
+      "Space": 55.62
     },
     {
       "date": "2025-06-04",
@@ -1589,8 +1589,8 @@
       "Quantum": 25.19,
       "Semi": -10.32,
       "Bio": 22.33,
-      "Fusion": 19.88,
-      "Space": 57.69
+      "Fusion": 19.09,
+      "Space": 56.95
     },
     {
       "date": "2025-06-05",
@@ -1599,8 +1599,8 @@
       "Quantum": 23.0,
       "Semi": -8.94,
       "Bio": 20.07,
-      "Fusion": 18.56,
-      "Space": 53.3
+      "Fusion": 17.75,
+      "Space": 52.6
     },
     {
       "date": "2025-06-06",
@@ -1609,8 +1609,8 @@
       "Quantum": 23.95,
       "Semi": -8.04,
       "Bio": 18.03,
-      "Fusion": 18.58,
-      "Space": 44.93
+      "Fusion": 17.76,
+      "Space": 44.2
     },
     {
       "date": "2025-06-09",
@@ -1619,8 +1619,8 @@
       "Quantum": 26.44,
       "Semi": -6.5,
       "Bio": 18.96,
-      "Fusion": 20.68,
-      "Space": 39.79
+      "Fusion": 19.85,
+      "Space": 39.06
     },
     {
       "date": "2025-06-10",
@@ -1629,8 +1629,8 @@
       "Quantum": 26.79,
       "Semi": -5.28,
       "Bio": 21.19,
-      "Fusion": 20.26,
-      "Space": 39.89
+      "Fusion": 19.45,
+      "Space": 39.18
     },
     {
       "date": "2025-06-11",
@@ -1639,8 +1639,8 @@
       "Quantum": 27.87,
       "Semi": -0.52,
       "Bio": 21.83,
-      "Fusion": 18.48,
-      "Space": 37.36
+      "Fusion": 17.69,
+      "Space": 36.68
     },
     {
       "date": "2025-06-12",
@@ -1649,8 +1649,8 @@
       "Quantum": 29.69,
       "Semi": -1.5,
       "Bio": 20.14,
-      "Fusion": 21.08,
-      "Space": 38.11
+      "Fusion": 20.29,
+      "Space": 37.41
     },
     {
       "date": "2025-06-13",
@@ -1659,8 +1659,8 @@
       "Quantum": 28.31,
       "Semi": -4.93,
       "Bio": 18.5,
-      "Fusion": 19.33,
-      "Space": 37.96
+      "Fusion": 18.53,
+      "Space": 37.25
     },
     {
       "date": "2025-06-16",
@@ -1669,8 +1669,8 @@
       "Quantum": 30.71,
       "Semi": -2.16,
       "Bio": 16.73,
-      "Fusion": 21.4,
-      "Space": 42.54
+      "Fusion": 20.59,
+      "Space": 41.82
     },
     {
       "date": "2025-06-17",
@@ -1679,8 +1679,8 @@
       "Quantum": 32.08,
       "Semi": 1.28,
       "Bio": 13.49,
-      "Fusion": 23.13,
-      "Space": 36.05
+      "Fusion": 22.31,
+      "Space": 35.32
     },
     {
       "date": "2025-06-18",
@@ -1689,8 +1689,8 @@
       "Quantum": 31.76,
       "Semi": 2.01,
       "Bio": 12.38,
-      "Fusion": 21.69,
-      "Space": 34.05
+      "Fusion": 20.9,
+      "Space": 33.33
     },
     {
       "date": "2025-06-19",
@@ -1699,8 +1699,8 @@
       "Quantum": 32.48,
       "Semi": -0.23,
       "Bio": 8.26,
-      "Fusion": 21.95,
-      "Space": 32.53
+      "Fusion": 21.14,
+      "Space": 31.81
     },
     {
       "date": "2025-06-20",
@@ -1709,8 +1709,8 @@
       "Quantum": 33.03,
       "Semi": 3.23,
       "Bio": 9.25,
-      "Fusion": 21.53,
-      "Space": 30.73
+      "Fusion": 20.73,
+      "Space": 30.04
     },
     {
       "date": "2025-06-23",
@@ -1719,8 +1719,8 @@
       "Quantum": 28.99,
       "Semi": 2.13,
       "Bio": 9.87,
-      "Fusion": 20.06,
-      "Space": 33.2
+      "Fusion": 19.27,
+      "Space": 32.5
     },
     {
       "date": "2025-06-24",
@@ -1729,8 +1729,8 @@
       "Quantum": 30.68,
       "Semi": 5.87,
       "Bio": 9.19,
-      "Fusion": 22.33,
-      "Space": 33.75
+      "Fusion": 21.49,
+      "Space": 33.04
     },
     {
       "date": "2025-06-25",
@@ -1739,8 +1739,8 @@
       "Quantum": 29.67,
       "Semi": 9.78,
       "Bio": 11.0,
-      "Fusion": 23.08,
-      "Space": 34.53
+      "Fusion": 22.23,
+      "Space": 33.82
     },
     {
       "date": "2025-06-26",
@@ -1749,8 +1749,8 @@
       "Quantum": 29.01,
       "Semi": 12.98,
       "Bio": 4.91,
-      "Fusion": 25.06,
-      "Space": 35.73
+      "Fusion": 24.18,
+      "Space": 35.02
     },
     {
       "date": "2025-06-27",
@@ -1759,8 +1759,8 @@
       "Quantum": 30.19,
       "Semi": 16.26,
       "Bio": 2.9,
-      "Fusion": 26.51,
-      "Space": 36.34
+      "Fusion": 25.61,
+      "Space": 35.58
     },
     {
       "date": "2025-06-30",
@@ -1769,8 +1769,8 @@
       "Quantum": 31.66,
       "Semi": 15.24,
       "Bio": 5.82,
-      "Fusion": 24.87,
-      "Space": 35.51
+      "Fusion": 23.98,
+      "Space": 34.77
     },
     {
       "date": "2025-07-01",
@@ -1779,8 +1779,8 @@
       "Quantum": 29.7,
       "Semi": 14.52,
       "Bio": 3.07,
-      "Fusion": 25.03,
-      "Space": 33.67
+      "Fusion": 24.1,
+      "Space": 32.93
     },
     {
       "date": "2025-07-02",
@@ -1789,8 +1789,8 @@
       "Quantum": 27.75,
       "Semi": 11.11,
       "Bio": 0.48,
-      "Fusion": 22.28,
-      "Space": 31.41
+      "Fusion": 21.38,
+      "Space": 30.7
     },
     {
       "date": "2025-07-03",
@@ -1799,8 +1799,8 @@
       "Quantum": 26.47,
       "Semi": 12.88,
       "Bio": 0.35,
-      "Fusion": 22.87,
-      "Space": 28.67
+      "Fusion": 21.96,
+      "Space": 27.98
     },
     {
       "date": "2025-07-04",
@@ -1809,8 +1809,8 @@
       "Quantum": 25.24,
       "Semi": 12.2,
       "Bio": 0.64,
-      "Fusion": 21.75,
-      "Space": 29.87
+      "Fusion": 20.86,
+      "Space": 29.18
     },
     {
       "date": "2025-07-07",
@@ -1819,8 +1819,8 @@
       "Quantum": 25.23,
       "Semi": 11.9,
       "Bio": -0.73,
-      "Fusion": 21.54,
-      "Space": 30.04
+      "Fusion": 20.67,
+      "Space": 29.36
     },
     {
       "date": "2025-07-08",
@@ -1829,8 +1829,8 @@
       "Quantum": 26.59,
       "Semi": 13.55,
       "Bio": -2.16,
-      "Fusion": 24.84,
-      "Space": 32.74
+      "Fusion": 23.92,
+      "Space": 32.05
     },
     {
       "date": "2025-07-09",
@@ -1839,8 +1839,8 @@
       "Quantum": 26.45,
       "Semi": 12.37,
       "Bio": -0.22,
-      "Fusion": 24.81,
-      "Space": 31.96
+      "Fusion": 23.9,
+      "Space": 31.28
     },
     {
       "date": "2025-07-10",
@@ -1849,8 +1849,8 @@
       "Quantum": 26.42,
       "Semi": 13.08,
       "Bio": 0.76,
-      "Fusion": 25.15,
-      "Space": 33.59
+      "Fusion": 24.24,
+      "Space": 32.91
     },
     {
       "date": "2025-07-11",
@@ -1859,8 +1859,8 @@
       "Quantum": 26.39,
       "Semi": 14.93,
       "Bio": 1.49,
-      "Fusion": 23.44,
-      "Space": 32.82
+      "Fusion": 22.55,
+      "Space": 32.15
     },
     {
       "date": "2025-07-14",
@@ -1869,8 +1869,8 @@
       "Quantum": 24.88,
       "Semi": 13.71,
       "Bio": 1.2,
-      "Fusion": 22.8,
-      "Space": 33.63
+      "Fusion": 21.91,
+      "Space": 32.94
     },
     {
       "date": "2025-07-15",
@@ -1879,8 +1879,8 @@
       "Quantum": 24.31,
       "Semi": 16.85,
       "Bio": 0.98,
-      "Fusion": 24.76,
-      "Space": 30.3
+      "Fusion": 23.84,
+      "Space": 29.62
     },
     {
       "date": "2025-07-16",
@@ -1889,8 +1889,8 @@
       "Quantum": 22.96,
       "Semi": 15.2,
       "Bio": 1.56,
-      "Fusion": 24.79,
-      "Space": 31.09
+      "Fusion": 23.86,
+      "Space": 30.4
     },
     {
       "date": "2025-07-17",
@@ -1899,8 +1899,8 @@
       "Quantum": 24.64,
       "Semi": 15.13,
       "Bio": 3.12,
-      "Fusion": 25.37,
-      "Space": 33.56
+      "Fusion": 24.42,
+      "Space": 32.88
     },
     {
       "date": "2025-07-18",
@@ -1909,8 +1909,8 @@
       "Quantum": 24.0,
       "Semi": 12.96,
       "Bio": 2.27,
-      "Fusion": 25.95,
-      "Space": 32.5
+      "Fusion": 25.0,
+      "Space": 31.83
     },
     {
       "date": "2025-07-22",
@@ -1919,8 +1919,8 @@
       "Quantum": 23.61,
       "Semi": 13.09,
       "Bio": 1.02,
-      "Fusion": 28.85,
-      "Space": 34.08
+      "Fusion": 27.86,
+      "Space": 33.38
     },
     {
       "date": "2025-07-23",
@@ -1929,8 +1929,8 @@
       "Quantum": 25.62,
       "Semi": 14.76,
       "Bio": 4.06,
-      "Fusion": 32.03,
-      "Space": 38.44
+      "Fusion": 31.05,
+      "Space": 37.72
     },
     {
       "date": "2025-07-24",
@@ -1939,8 +1939,8 @@
       "Quantum": 27.57,
       "Semi": 14.73,
       "Bio": 5.56,
-      "Fusion": 34.18,
-      "Space": 40.86
+      "Fusion": 33.16,
+      "Space": 40.12
     },
     {
       "date": "2025-07-25",
@@ -1949,8 +1949,8 @@
       "Quantum": 27.63,
       "Semi": 13.92,
       "Bio": 5.86,
-      "Fusion": 34.36,
-      "Space": 39.3
+      "Fusion": 33.31,
+      "Space": 38.57
     },
     {
       "date": "2025-07-28",
@@ -1959,8 +1959,8 @@
       "Quantum": 27.04,
       "Semi": 11.43,
       "Bio": 5.03,
-      "Fusion": 33.64,
-      "Space": 38.07
+      "Fusion": 32.6,
+      "Space": 37.35
     },
     {
       "date": "2025-07-29",
@@ -1969,8 +1969,8 @@
       "Quantum": 26.04,
       "Semi": 8.76,
       "Bio": 5.98,
-      "Fusion": 33.5,
-      "Space": 31.5
+      "Fusion": 32.45,
+      "Space": 30.79
     },
     {
       "date": "2025-07-30",
@@ -1979,8 +1979,8 @@
       "Quantum": 27.98,
       "Semi": 9.02,
       "Bio": 5.65,
-      "Fusion": 37.72,
-      "Space": 34.28
+      "Fusion": 36.58,
+      "Space": 33.54
     },
     {
       "date": "2025-07-31",
@@ -1989,8 +1989,8 @@
       "Quantum": 30.38,
       "Semi": 12.84,
       "Bio": 5.12,
-      "Fusion": 42.25,
-      "Space": 33.65
+      "Fusion": 41.03,
+      "Space": 32.9
     },
     {
       "date": "2025-08-01",
@@ -1999,8 +1999,8 @@
       "Quantum": 30.79,
       "Semi": 6.59,
       "Bio": 5.93,
-      "Fusion": 42.5,
-      "Space": 35.14
+      "Fusion": 41.29,
+      "Space": 34.38
     },
     {
       "date": "2025-08-04",
@@ -2009,8 +2009,8 @@
       "Quantum": 28.92,
       "Semi": 5.2,
       "Bio": 5.51,
-      "Fusion": 41.44,
-      "Space": 33.72
+      "Fusion": 40.23,
+      "Space": 32.97
     },
     {
       "date": "2025-08-05",
@@ -2019,8 +2019,8 @@
       "Quantum": 29.87,
       "Semi": 5.42,
       "Bio": 8.07,
-      "Fusion": 45.64,
-      "Space": 35.2
+      "Fusion": 44.39,
+      "Space": 34.45
     },
     {
       "date": "2025-08-06",
@@ -2029,8 +2029,8 @@
       "Quantum": 30.39,
       "Semi": 3.21,
       "Bio": 8.34,
-      "Fusion": 47.29,
-      "Space": 35.43
+      "Fusion": 46.01,
+      "Space": 34.68
     },
     {
       "date": "2025-08-07",
@@ -2039,8 +2039,8 @@
       "Quantum": 31.63,
       "Semi": 2.49,
       "Bio": 10.49,
-      "Fusion": 47.81,
-      "Space": 34.8
+      "Fusion": 46.46,
+      "Space": 34.05
     },
     {
       "date": "2025-08-08",
@@ -2049,8 +2049,8 @@
       "Quantum": 30.97,
       "Semi": 3.75,
       "Bio": 8.79,
-      "Fusion": 43.7,
-      "Space": 34.77
+      "Fusion": 42.39,
+      "Space": 34.04
     },
     {
       "date": "2025-08-12",
@@ -2059,8 +2059,8 @@
       "Quantum": 31.61,
       "Semi": 7.09,
       "Bio": 8.38,
-      "Fusion": 43.72,
-      "Space": 35.28
+      "Fusion": 42.35,
+      "Space": 34.55
     },
     {
       "date": "2025-08-13",
@@ -2069,8 +2069,8 @@
       "Quantum": 31.64,
       "Semi": 5.93,
       "Bio": 9.58,
-      "Fusion": 45.13,
-      "Space": 31.91
+      "Fusion": 43.72,
+      "Space": 31.25
     },
     {
       "date": "2025-08-14",
@@ -2079,8 +2079,8 @@
       "Quantum": 30.52,
       "Semi": 3.51,
       "Bio": 8.88,
-      "Fusion": 43.47,
-      "Space": 30.84
+      "Fusion": 42.07,
+      "Space": 30.22
     },
     {
       "date": "2025-08-15",
@@ -2089,8 +2089,8 @@
       "Quantum": 32.38,
       "Semi": 5.46,
       "Bio": 9.83,
-      "Fusion": 46.58,
-      "Space": 32.55
+      "Fusion": 45.14,
+      "Space": 31.94
     },
     {
       "date": "2025-08-18",
@@ -2099,8 +2099,8 @@
       "Quantum": 34.34,
       "Semi": 3.84,
       "Bio": 9.22,
-      "Fusion": 48.75,
-      "Space": 36.13
+      "Fusion": 47.29,
+      "Space": 35.52
     },
     {
       "date": "2025-08-19",
@@ -2109,8 +2109,8 @@
       "Quantum": 34.24,
       "Semi": 5.19,
       "Bio": 10.53,
-      "Fusion": 46.78,
-      "Space": 31.93
+      "Fusion": 45.36,
+      "Space": 31.33
     },
     {
       "date": "2025-08-20",
@@ -2119,8 +2119,8 @@
       "Quantum": 32.23,
       "Semi": 1.73,
       "Bio": 9.1,
-      "Fusion": 41.76,
-      "Space": 30.1
+      "Fusion": 40.43,
+      "Space": 29.52
     },
     {
       "date": "2025-08-21",
@@ -2129,8 +2129,8 @@
       "Quantum": 31.36,
       "Semi": 1.03,
       "Bio": 6.76,
-      "Fusion": 41.48,
-      "Space": 29.52
+      "Fusion": 40.13,
+      "Space": 28.94
     },
     {
       "date": "2025-08-22",
@@ -2139,8 +2139,8 @@
       "Quantum": 32.2,
       "Semi": 0.42,
       "Bio": 7.61,
-      "Fusion": 42.3,
-      "Space": 26.4
+      "Fusion": 40.94,
+      "Space": 25.82
     },
     {
       "date": "2025-08-25",
@@ -2149,8 +2149,8 @@
       "Quantum": 32.96,
       "Semi": 3.15,
       "Bio": 6.16,
-      "Fusion": 43.62,
-      "Space": 26.45
+      "Fusion": 42.26,
+      "Space": 25.87
     },
     {
       "date": "2025-08-26",
@@ -2159,8 +2159,8 @@
       "Quantum": 32.73,
       "Semi": 3.56,
       "Bio": 4.17,
-      "Fusion": 42.43,
-      "Space": 28.43
+      "Fusion": 41.08,
+      "Space": 27.86
     },
     {
       "date": "2025-08-27",
@@ -2169,8 +2169,8 @@
       "Quantum": 32.18,
       "Semi": 4.43,
       "Bio": 3.77,
-      "Fusion": 42.51,
-      "Space": 28.02
+      "Fusion": 41.14,
+      "Space": 27.47
     },
     {
       "date": "2025-08-28",
@@ -2179,8 +2179,8 @@
       "Quantum": 31.4,
       "Semi": 5.85,
       "Bio": 3.87,
-      "Fusion": 43.9,
-      "Space": 28.58
+      "Fusion": 42.45,
+      "Space": 28.02
     },
     {
       "date": "2025-08-29",
@@ -2189,8 +2189,8 @@
       "Quantum": 31.79,
       "Semi": 5.4,
       "Bio": 3.83,
-      "Fusion": 47.15,
-      "Space": 27.6
+      "Fusion": 45.64,
+      "Space": 27.05
     },
     {
       "date": "2025-09-01",
@@ -2199,8 +2199,8 @@
       "Quantum": 30.28,
       "Semi": -1.24,
       "Bio": 5.66,
-      "Fusion": 45.01,
-      "Space": 25.6
+      "Fusion": 43.55,
+      "Space": 25.06
     },
     {
       "date": "2025-09-02",
@@ -2209,8 +2209,8 @@
       "Quantum": 29.06,
       "Semi": -2.17,
       "Bio": 7.18,
-      "Fusion": 45.68,
-      "Space": 26.33
+      "Fusion": 44.21,
+      "Space": 25.79
     },
     {
       "date": "2025-09-03",
@@ -2219,8 +2219,8 @@
       "Quantum": 26.78,
       "Semi": -3.65,
       "Bio": 5.85,
-      "Fusion": 43.99,
-      "Space": 22.29
+      "Fusion": 42.52,
+      "Space": 21.76
     },
     {
       "date": "2025-09-04",
@@ -2229,8 +2229,8 @@
       "Quantum": 27.39,
       "Semi": -2.65,
       "Bio": 6.79,
-      "Fusion": 46.74,
-      "Space": 21.81
+      "Fusion": 45.19,
+      "Space": 21.27
     },
     {
       "date": "2025-09-05",
@@ -2239,8 +2239,8 @@
       "Quantum": 28.77,
       "Semi": -0.67,
       "Bio": 8.0,
-      "Fusion": 50.2,
-      "Space": 23.88
+      "Fusion": 48.63,
+      "Space": 23.34
     },
     {
       "date": "2025-09-08",
@@ -2249,8 +2249,8 @@
       "Quantum": 30.77,
       "Semi": 0.79,
       "Bio": 9.54,
-      "Fusion": 56.47,
-      "Space": 25.13
+      "Fusion": 54.88,
+      "Space": 24.58
     },
     {
       "date": "2025-09-09",
@@ -2259,8 +2259,8 @@
       "Quantum": 30.27,
       "Semi": 1.98,
       "Bio": 8.95,
-      "Fusion": 53.33,
-      "Space": 23.8
+      "Fusion": 51.81,
+      "Space": 23.25
     },
     {
       "date": "2025-09-10",
@@ -2269,8 +2269,8 @@
       "Quantum": 32.35,
       "Semi": 3.93,
       "Bio": 7.82,
-      "Fusion": 56.31,
-      "Space": 27.22
+      "Fusion": 54.71,
+      "Space": 26.67
     },
     {
       "date": "2025-09-11",
@@ -2279,8 +2279,8 @@
       "Quantum": 32.55,
       "Semi": 7.42,
       "Bio": 6.5,
-      "Fusion": 57.59,
-      "Space": 26.97
+      "Fusion": 55.94,
+      "Space": 26.41
     },
     {
       "date": "2025-09-12",
@@ -2289,8 +2289,8 @@
       "Quantum": 33.39,
       "Semi": 8.77,
       "Bio": 6.88,
-      "Fusion": 55.6,
-      "Space": 27.82
+      "Fusion": 53.94,
+      "Space": 27.26
     },
     {
       "date": "2025-09-16",
@@ -2299,8 +2299,8 @@
       "Quantum": 34.54,
       "Semi": 12.47,
       "Bio": 5.8,
-      "Fusion": 59.61,
-      "Space": 30.3
+      "Fusion": 57.97,
+      "Space": 29.73
     },
     {
       "date": "2025-09-17",
@@ -2309,8 +2309,8 @@
       "Quantum": 32.95,
       "Semi": 12.01,
       "Bio": 5.88,
-      "Fusion": 54.33,
-      "Space": 27.67
+      "Fusion": 52.75,
+      "Space": 27.11
     },
     {
       "date": "2025-09-18",
@@ -2319,8 +2319,8 @@
       "Quantum": 35.7,
       "Semi": 17.65,
       "Bio": 5.44,
-      "Fusion": 58.72,
-      "Space": 26.78
+      "Fusion": 57.12,
+      "Space": 26.23
     },
     {
       "date": "2025-09-19",
@@ -2329,8 +2329,8 @@
       "Quantum": 37.16,
       "Semi": 22.33,
       "Bio": 9.08,
-      "Fusion": 64.7,
-      "Space": 28.28
+      "Fusion": 63.05,
+      "Space": 27.7
     },
     {
       "date": "2025-09-22",
@@ -2339,8 +2339,8 @@
       "Quantum": 40.3,
       "Semi": 27.22,
       "Bio": 10.44,
-      "Fusion": 66.13,
-      "Space": 26.76
+      "Fusion": 64.45,
+      "Space": 26.19
     },
     {
       "date": "2025-09-24",
@@ -2349,8 +2349,8 @@
       "Quantum": 39.84,
       "Semi": 28.15,
       "Bio": 9.25,
-      "Fusion": 66.02,
-      "Space": 27.39
+      "Fusion": 64.31,
+      "Space": 26.79
     },
     {
       "date": "2025-09-25",
@@ -2359,8 +2359,8 @@
       "Quantum": 38.49,
       "Semi": 28.26,
       "Bio": 6.19,
-      "Fusion": 62.26,
-      "Space": 25.7
+      "Fusion": 60.55,
+      "Space": 25.11
     },
     {
       "date": "2025-09-26",
@@ -2369,8 +2369,8 @@
       "Quantum": 37.8,
       "Semi": 21.65,
       "Bio": 4.4,
-      "Fusion": 62.18,
-      "Space": 25.97
+      "Fusion": 60.52,
+      "Space": 25.38
     },
     {
       "date": "2025-09-29",
@@ -2379,8 +2379,8 @@
       "Quantum": 35.38,
       "Semi": 23.83,
       "Bio": 5.14,
-      "Fusion": 65.85,
-      "Space": 27.1
+      "Fusion": 63.05,
+      "Space": 25.94
     },
     {
       "date": "2025-09-30",
@@ -2389,8 +2389,8 @@
       "Quantum": 36.02,
       "Semi": 23.48,
       "Bio": 4.93,
-      "Fusion": 65.76,
-      "Space": 26.69
+      "Fusion": 63.0,
+      "Space": 25.53
     },
     {
       "date": "2025-10-01",
@@ -2399,8 +2399,8 @@
       "Quantum": 32.28,
       "Semi": 20.93,
       "Bio": 4.52,
-      "Fusion": 60.38,
-      "Space": 23.41
+      "Fusion": 57.66,
+      "Space": 22.29
     },
     {
       "date": "2025-10-02",
@@ -2409,8 +2409,8 @@
       "Quantum": 30.97,
       "Semi": 30.46,
       "Bio": 10.85,
-      "Fusion": 57.98,
-      "Space": 21.99
+      "Fusion": 55.29,
+      "Space": 20.88
     },
     {
       "date": "2025-10-03",
@@ -2419,8 +2419,8 @@
       "Quantum": 33.98,
       "Semi": 31.17,
       "Bio": 15.0,
-      "Fusion": 59.2,
-      "Space": 23.76
+      "Fusion": 56.5,
+      "Space": 22.67
     },
     {
       "date": "2025-10-06",
@@ -2429,8 +2429,8 @@
       "Quantum": 42.05,
       "Semi": 39.18,
       "Bio": 17.41,
-      "Fusion": 73.45,
-      "Space": 35.99
+      "Fusion": 70.68,
+      "Space": 34.79
     },
     {
       "date": "2025-10-07",
@@ -2439,8 +2439,8 @@
       "Quantum": 44.39,
       "Semi": 36.58,
       "Bio": 18.25,
-      "Fusion": 79.68,
-      "Space": 35.02
+      "Fusion": 76.76,
+      "Space": 33.84
     },
     {
       "date": "2025-10-08",
@@ -2449,8 +2449,8 @@
       "Quantum": 43.75,
       "Semi": 33.9,
       "Bio": 19.29,
-      "Fusion": 90.08,
-      "Space": 36.36
+      "Fusion": 87.04,
+      "Space": 35.14
     },
     {
       "date": "2025-10-09",
@@ -2459,8 +2459,8 @@
       "Quantum": 41.5,
       "Semi": 36.7,
       "Bio": 23.12,
-      "Fusion": 97.06,
-      "Space": 36.54
+      "Fusion": 93.86,
+      "Space": 35.34
     },
     {
       "date": "2025-10-10",
@@ -2469,8 +2469,8 @@
       "Quantum": 37.61,
       "Semi": 34.1,
       "Bio": 22.07,
-      "Fusion": 90.09,
-      "Space": 31.44
+      "Fusion": 86.93,
+      "Space": 30.29
     },
     {
       "date": "2025-10-14",
@@ -2479,8 +2479,8 @@
       "Quantum": 32.78,
       "Semi": 29.79,
       "Bio": 17.36,
-      "Fusion": 82.23,
-      "Space": 25.66
+      "Fusion": 79.23,
+      "Space": 24.54
     },
     {
       "date": "2025-10-15",
@@ -2489,8 +2489,8 @@
       "Quantum": 35.44,
       "Semi": 32.44,
       "Bio": 19.34,
-      "Fusion": 92.63,
-      "Space": 30.99
+      "Fusion": 89.55,
+      "Space": 29.82
     },
     {
       "date": "2025-10-16",
@@ -2499,8 +2499,8 @@
       "Quantum": 36.88,
       "Semi": 34.47,
       "Bio": 13.25,
-      "Fusion": 103.08,
-      "Space": 32.51
+      "Fusion": 99.88,
+      "Space": 31.34
     },
     {
       "date": "2025-10-17",
@@ -2509,8 +2509,8 @@
       "Quantum": 34.01,
       "Semi": 30.49,
       "Bio": 8.89,
-      "Fusion": 99.28,
-      "Space": 29.99
+      "Fusion": 96.14,
+      "Space": 28.84
     },
     {
       "date": "2025-10-20",
@@ -2519,8 +2519,8 @@
       "Quantum": 41.61,
       "Semi": 35.68,
       "Bio": 10.16,
-      "Fusion": 114.25,
-      "Space": 34.27
+      "Fusion": 110.97,
+      "Space": 33.09
     },
     {
       "date": "2025-10-21",
@@ -2529,8 +2529,8 @@
       "Quantum": 38.01,
       "Semi": 33.32,
       "Bio": 11.02,
-      "Fusion": 100.68,
-      "Space": 30.57
+      "Fusion": 97.5,
+      "Space": 29.4
     },
     {
       "date": "2025-10-22",
@@ -2539,8 +2539,8 @@
       "Quantum": 38.69,
       "Semi": 32.02,
       "Bio": 12.78,
-      "Fusion": 103.79,
-      "Space": 33.49
+      "Fusion": 100.57,
+      "Space": 32.24
     },
     {
       "date": "2025-10-23",
@@ -2549,8 +2549,8 @@
       "Quantum": 39.03,
       "Semi": 28.28,
       "Bio": 10.58,
-      "Fusion": 104.92,
-      "Space": 34.7
+      "Fusion": 101.63,
+      "Space": 33.35
     },
     {
       "date": "2025-10-24",
@@ -2559,8 +2559,8 @@
       "Quantum": 39.59,
       "Semi": 33.84,
       "Bio": 9.23,
-      "Fusion": 105.64,
-      "Space": 36.11
+      "Fusion": 102.22,
+      "Space": 34.74
     },
     {
       "date": "2025-10-27",
@@ -2569,8 +2569,8 @@
       "Quantum": 41.93,
       "Semi": 36.54,
       "Bio": 10.8,
-      "Fusion": 110.94,
-      "Space": 40.0
+      "Fusion": 107.25,
+      "Space": 38.5
     },
     {
       "date": "2025-10-28",
@@ -2579,8 +2579,8 @@
       "Quantum": 39.31,
       "Semi": 35.21,
       "Bio": 10.07,
-      "Fusion": 106.38,
-      "Space": 34.96
+      "Fusion": 102.72,
+      "Space": 33.54
     },
     {
       "date": "2025-10-29",
@@ -2589,8 +2589,8 @@
       "Quantum": 38.91,
       "Semi": 44.18,
       "Bio": 7.17,
-      "Fusion": 102.39,
-      "Space": 32.76
+      "Fusion": 98.56,
+      "Space": 31.36
     },
     {
       "date": "2025-10-30",
@@ -2599,8 +2599,8 @@
       "Quantum": 42.64,
       "Semi": 48.18,
       "Bio": 9.44,
-      "Fusion": 108.99,
-      "Space": 36.28
+      "Fusion": 105.02,
+      "Space": 34.84
     },
     {
       "date": "2025-10-31",
@@ -2609,8 +2609,8 @@
       "Quantum": 44.6,
       "Semi": 52.24,
       "Bio": 9.11,
-      "Fusion": 109.36,
-      "Space": 36.03
+      "Fusion": 105.32,
+      "Space": 34.56
     },
     {
       "date": "2025-11-04",
@@ -2619,8 +2619,8 @@
       "Quantum": 44.35,
       "Semi": 52.36,
       "Bio": 9.77,
-      "Fusion": 110.75,
-      "Space": 35.79
+      "Fusion": 106.8,
+      "Space": 34.36
     },
     {
       "date": "2025-11-05",
@@ -2629,8 +2629,8 @@
       "Quantum": 41.64,
       "Semi": 43.2,
       "Bio": 8.74,
-      "Fusion": 108.11,
-      "Space": 35.13
+      "Fusion": 104.37,
+      "Space": 33.71
     },
     {
       "date": "2025-11-06",
@@ -2639,8 +2639,8 @@
       "Quantum": 41.93,
       "Semi": 47.88,
       "Bio": 8.7,
-      "Fusion": 106.64,
-      "Space": 38.93
+      "Fusion": 102.54,
+      "Space": 37.51
     },
     {
       "date": "2025-11-07",
@@ -2649,8 +2649,8 @@
       "Quantum": 40.93,
       "Semi": 43.14,
       "Bio": 6.77,
-      "Fusion": 98.02,
-      "Space": 37.37
+      "Fusion": 94.12,
+      "Space": 36.02
     },
     {
       "date": "2025-11-10",
@@ -2659,8 +2659,8 @@
       "Quantum": 42.45,
       "Semi": 49.27,
       "Bio": 6.88,
-      "Fusion": 95.58,
-      "Space": 37.25
+      "Fusion": 91.67,
+      "Space": 35.9
     },
     {
       "date": "2025-11-11",
@@ -2669,8 +2669,8 @@
       "Quantum": 43.53,
       "Semi": 46.36,
       "Bio": 7.46,
-      "Fusion": 97.74,
-      "Space": 34.43
+      "Fusion": 94.07,
+      "Space": 33.17
     },
     {
       "date": "2025-11-12",
@@ -2679,8 +2679,8 @@
       "Quantum": 45.14,
       "Semi": 42.15,
       "Bio": 10.79,
-      "Fusion": 107.18,
-      "Space": 35.44
+      "Fusion": 103.35,
+      "Space": 34.18
     },
     {
       "date": "2025-11-13",
@@ -2689,8 +2689,8 @@
       "Quantum": 44.65,
       "Semi": 43.1,
       "Bio": 11.46,
-      "Fusion": 108.33,
-      "Space": 34.97
+      "Fusion": 104.38,
+      "Space": 33.71
     },
     {
       "date": "2025-11-14",
@@ -2699,8 +2699,8 @@
       "Quantum": 42.88,
       "Semi": 37.06,
       "Bio": 11.63,
-      "Fusion": 99.76,
-      "Space": 31.34
+      "Fusion": 96.06,
+      "Space": 30.09
     },
     {
       "date": "2025-11-17",
@@ -2709,8 +2709,8 @@
       "Quantum": 42.54,
       "Semi": 40.87,
       "Bio": 11.0,
-      "Fusion": 101.91,
-      "Space": 34.51
+      "Fusion": 98.13,
+      "Space": 33.23
     },
     {
       "date": "2025-11-18",
@@ -2719,8 +2719,8 @@
       "Quantum": 37.24,
       "Semi": 33.37,
       "Bio": 9.31,
-      "Fusion": 89.68,
-      "Space": 29.11
+      "Fusion": 86.27,
+      "Space": 27.9
     },
     {
       "date": "2025-11-19",
@@ -2729,8 +2729,8 @@
       "Quantum": 37.24,
       "Semi": 30.26,
       "Bio": 8.83,
-      "Fusion": 88.78,
-      "Space": 28.75
+      "Fusion": 85.38,
+      "Space": 27.55
     },
     {
       "date": "2025-11-20",
@@ -2739,8 +2739,8 @@
       "Quantum": 41.33,
       "Semi": 38.75,
       "Bio": 10.12,
-      "Fusion": 96.55,
-      "Space": 32.45
+      "Fusion": 92.95,
+      "Space": 31.24
     },
     {
       "date": "2025-11-21",
@@ -2749,8 +2749,8 @@
       "Quantum": 39.39,
       "Semi": 28.48,
       "Bio": 9.77,
-      "Fusion": 86.12,
-      "Space": 28.78
+      "Fusion": 82.82,
+      "Space": 27.6
     },
     {
       "date": "2025-11-25",
@@ -2759,8 +2759,8 @@
       "Quantum": 38.31,
       "Semi": 29.21,
       "Bio": 9.71,
-      "Fusion": 86.38,
-      "Space": 27.04
+      "Fusion": 83.07,
+      "Space": 25.87
     },
     {
       "date": "2025-11-26",
@@ -2769,8 +2769,8 @@
       "Quantum": 39.74,
       "Semi": 31.21,
       "Bio": 12.56,
-      "Fusion": 95.65,
-      "Space": 30.03
+      "Fusion": 92.21,
+      "Space": 28.85
     },
     {
       "date": "2025-11-27",
@@ -2779,8 +2779,8 @@
       "Quantum": 40.65,
       "Semi": 35.63,
       "Bio": 12.53,
-      "Fusion": 99.63,
-      "Space": 32.99
+      "Fusion": 96.18,
+      "Space": 31.81
     },
     {
       "date": "2025-11-28",
@@ -2789,8 +2789,8 @@
       "Quantum": 40.94,
       "Semi": 36.05,
       "Bio": 13.1,
-      "Fusion": 101.41,
-      "Space": 34.03
+      "Fusion": 97.99,
+      "Space": 32.86
     },
     {
       "date": "2025-12-01",
@@ -2799,8 +2799,8 @@
       "Quantum": 38.54,
       "Semi": 35.68,
       "Bio": 9.55,
-      "Fusion": 93.75,
-      "Space": 31.54
+      "Fusion": 90.64,
+      "Space": 30.37
     },
     {
       "date": "2025-12-02",
@@ -2809,8 +2809,8 @@
       "Quantum": 38.43,
       "Semi": 34.17,
       "Bio": 6.19,
-      "Fusion": 92.81,
-      "Space": 28.78
+      "Fusion": 89.65,
+      "Space": 27.61
     },
     {
       "date": "2025-12-03",
@@ -2819,8 +2819,8 @@
       "Quantum": 38.07,
       "Semi": 38.47,
       "Bio": 2.03,
-      "Fusion": 97.7,
-      "Space": 29.37
+      "Fusion": 94.46,
+      "Space": 28.17
     },
     {
       "date": "2025-12-04",
@@ -2829,8 +2829,8 @@
       "Quantum": 39.67,
       "Semi": 41.74,
       "Bio": 4.19,
-      "Fusion": 97.09,
-      "Space": 32.25
+      "Fusion": 93.86,
+      "Space": 30.99
     },
     {
       "date": "2025-12-05",
@@ -2839,8 +2839,8 @@
       "Quantum": 38.28,
       "Semi": 41.76,
       "Bio": 4.28,
-      "Fusion": 99.74,
-      "Space": 36.88
+      "Fusion": 96.45,
+      "Space": 35.61
     },
     {
       "date": "2025-12-08",
@@ -2849,8 +2849,8 @@
       "Quantum": 39.25,
       "Semi": 42.05,
       "Bio": 4.45,
-      "Fusion": 104.29,
-      "Space": 37.67
+      "Fusion": 100.77,
+      "Space": 36.37
     },
     {
       "date": "2025-12-09",
@@ -2859,8 +2859,8 @@
       "Quantum": 38.35,
       "Semi": 42.97,
       "Bio": 5.51,
-      "Fusion": 104.99,
-      "Space": 39.8
+      "Fusion": 101.47,
+      "Space": 38.45
     },
     {
       "date": "2025-12-10",
@@ -2869,8 +2869,8 @@
       "Quantum": 38.8,
       "Semi": 40.58,
       "Bio": 8.31,
-      "Fusion": 102.94,
-      "Space": 39.7
+      "Fusion": 99.42,
+      "Space": 38.31
     },
     {
       "date": "2025-12-11",
@@ -2879,8 +2879,8 @@
       "Quantum": 36.61,
       "Semi": 39.24,
       "Bio": 5.77,
-      "Fusion": 97.07,
-      "Space": 38.9
+      "Fusion": 93.6,
+      "Space": 37.57
     },
     {
       "date": "2025-12-12",
@@ -2889,8 +2889,8 @@
       "Quantum": 38.3,
       "Semi": 38.41,
       "Bio": 5.93,
-      "Fusion": 98.58,
-      "Space": 41.51
+      "Fusion": 95.05,
+      "Space": 40.12
     },
     {
       "date": "2025-12-15",
@@ -2899,8 +2899,8 @@
       "Quantum": 38.68,
       "Semi": 33.85,
       "Bio": 6.77,
-      "Fusion": 96.12,
-      "Space": 41.42
+      "Fusion": 92.75,
+      "Space": 40.01
     },
     {
       "date": "2025-12-16",
@@ -2909,8 +2909,8 @@
       "Quantum": 36.53,
       "Semi": 30.48,
       "Bio": 5.42,
-      "Fusion": 88.74,
-      "Space": 37.11
+      "Fusion": 85.6,
+      "Space": 35.72
     },
     {
       "date": "2025-12-17",
@@ -2919,8 +2919,8 @@
       "Quantum": 36.84,
       "Semi": 31.7,
       "Bio": 4.44,
-      "Fusion": 87.25,
-      "Space": 35.78
+      "Fusion": 84.1,
+      "Space": 34.41
     },
     {
       "date": "2025-12-18",
@@ -2929,8 +2929,8 @@
       "Quantum": 35.44,
       "Semi": 28.29,
       "Bio": 3.99,
-      "Fusion": 83.23,
-      "Space": 32.8
+      "Fusion": 80.19,
+      "Space": 31.49
     },
     {
       "date": "2025-12-19",
@@ -2939,8 +2939,8 @@
       "Quantum": 37.53,
       "Semi": 31.06,
       "Bio": 4.17,
-      "Fusion": 87.44,
-      "Space": 35.9
+      "Fusion": 84.27,
+      "Space": 34.61
     },
     {
       "date": "2025-12-22",
@@ -2949,8 +2949,8 @@
       "Quantum": 37.32,
       "Semi": 37.87,
       "Bio": 3.43,
-      "Fusion": 93.31,
-      "Space": 37.64
+      "Fusion": 89.92,
+      "Space": 36.3
     },
     {
       "date": "2025-12-23",
@@ -2959,8 +2959,8 @@
       "Quantum": 38.64,
       "Semi": 36.87,
       "Bio": 6.04,
-      "Fusion": 93.67,
-      "Space": 38.89
+      "Fusion": 90.27,
+      "Space": 37.57
     },
     {
       "date": "2025-12-24",
@@ -2969,8 +2969,8 @@
       "Quantum": 37.79,
       "Semi": 39.12,
       "Bio": 5.06,
-      "Fusion": 94.58,
-      "Space": 40.73
+      "Fusion": 91.13,
+      "Space": 39.43
     },
     {
       "date": "2025-12-25",
@@ -2979,8 +2979,8 @@
       "Quantum": 38.64,
       "Semi": 41.29,
       "Bio": 6.29,
-      "Fusion": 93.66,
-      "Space": 36.08
+      "Fusion": 90.3,
+      "Space": 34.81
     },
     {
       "date": "2025-12-26",
@@ -2989,8 +2989,8 @@
       "Quantum": 38.03,
       "Semi": 43.23,
       "Bio": 6.21,
-      "Fusion": 90.31,
-      "Space": 35.03
+      "Fusion": 87.04,
+      "Space": 33.78
     },
     {
       "date": "2025-12-29",
@@ -2999,8 +2999,8 @@
       "Quantum": 38.06,
       "Semi": 41.41,
       "Bio": 7.16,
-      "Fusion": 94.47,
-      "Space": 35.01
+      "Fusion": 91.07,
+      "Space": 33.77
     },
     {
       "date": "2025-12-30",
@@ -3009,8 +3009,8 @@
       "Quantum": 37.72,
       "Semi": 40.41,
       "Bio": 6.14,
-      "Fusion": 91.95,
-      "Space": 33.99
+      "Fusion": 88.62,
+      "Space": 32.76
     },
     {
       "date": "2026-01-05",
@@ -3019,8 +3019,8 @@
       "Quantum": 41.18,
       "Semi": 49.55,
       "Bio": 6.33,
-      "Fusion": 100.81,
-      "Space": 38.44
+      "Fusion": 97.29,
+      "Space": 37.11
     },
     {
       "date": "2026-01-06",
@@ -3029,8 +3029,8 @@
       "Quantum": 44.29,
       "Semi": 53.28,
       "Bio": 7.8,
-      "Fusion": 102.27,
-      "Space": 42.06
+      "Fusion": 98.75,
+      "Space": 40.65
     },
     {
       "date": "2026-01-07",
@@ -3039,8 +3039,8 @@
       "Quantum": 44.42,
       "Semi": 53.97,
       "Bio": 8.32,
-      "Fusion": 100.96,
-      "Space": 38.85
+      "Fusion": 97.48,
+      "Space": 37.47
     },
     {
       "date": "2026-01-08",
@@ -3049,8 +3049,8 @@
       "Quantum": 44.43,
       "Semi": 51.16,
       "Bio": 10.62,
-      "Fusion": 101.54,
-      "Space": 40.91
+      "Fusion": 98.18,
+      "Space": 39.49
     },
     {
       "date": "2026-01-09",
@@ -3059,8 +3059,8 @@
       "Quantum": 44.58,
       "Semi": 53.0,
       "Bio": 9.61,
-      "Fusion": 101.57,
-      "Space": 41.74
+      "Fusion": 98.32,
+      "Space": 40.27
     },
     {
       "date": "2026-01-13",
@@ -3069,8 +3069,8 @@
       "Quantum": 48.59,
       "Semi": 63.47,
       "Bio": 9.7,
-      "Fusion": 110.97,
-      "Space": 48.53
+      "Fusion": 107.7,
+      "Space": 46.94
     },
     {
       "date": "2026-01-14",
@@ -3079,8 +3079,8 @@
       "Quantum": 49.89,
       "Semi": 68.96,
       "Bio": 10.43,
-      "Fusion": 115.24,
-      "Space": 48.56
+      "Fusion": 111.94,
+      "Space": 46.92
     },
     {
       "date": "2026-01-15",
@@ -3089,8 +3089,8 @@
       "Quantum": 50.7,
       "Semi": 70.0,
       "Bio": 13.46,
-      "Fusion": 122.04,
-      "Space": 51.39
+      "Fusion": 118.74,
+      "Space": 49.75
     },
     {
       "date": "2026-01-16",
@@ -3099,8 +3099,8 @@
       "Quantum": 51.18,
       "Semi": 76.67,
       "Bio": 12.27,
-      "Fusion": 121.36,
-      "Space": 53.31
+      "Fusion": 117.98,
+      "Space": 51.66
     },
     {
       "date": "2026-01-19",
@@ -3109,8 +3109,8 @@
       "Quantum": 50.69,
       "Semi": 77.6,
       "Bio": 12.81,
-      "Fusion": 121.44,
-      "Space": 61.35
+      "Fusion": 118.14,
+      "Space": 59.62
     },
     {
       "date": "2026-01-20",
@@ -3119,8 +3119,8 @@
       "Quantum": 48.54,
       "Semi": 72.58,
       "Bio": 11.09,
-      "Fusion": 115.23,
-      "Space": 56.37
+      "Fusion": 112.01,
+      "Space": 54.69
     },
     {
       "date": "2026-01-21",
@@ -3129,8 +3129,8 @@
       "Quantum": 46.94,
       "Semi": 75.79,
       "Bio": 10.24,
-      "Fusion": 118.4,
-      "Space": 55.24
+      "Fusion": 114.98,
+      "Space": 53.54
     },
     {
       "date": "2026-01-22",
@@ -3139,8 +3139,8 @@
       "Quantum": 47.27,
       "Semi": 84.64,
       "Bio": 10.79,
-      "Fusion": 116.28,
-      "Space": 50.45
+      "Fusion": 112.81,
+      "Space": 48.84
     },
     {
       "date": "2026-01-23",
@@ -3149,8 +3149,8 @@
       "Quantum": 48.82,
       "Semi": 82.39,
       "Bio": 13.74,
-      "Fusion": 118.09,
-      "Space": 51.79
+      "Fusion": 114.67,
+      "Space": 50.22
     },
     {
       "date": "2026-01-26",
@@ -3159,8 +3159,8 @@
       "Quantum": 44.03,
       "Semi": 79.04,
       "Bio": 12.6,
-      "Fusion": 116.25,
-      "Space": 50.41
+      "Fusion": 112.82,
+      "Space": 48.87
     },
     {
       "date": "2026-01-27",
@@ -3169,8 +3169,8 @@
       "Quantum": 44.65,
       "Semi": 84.93,
       "Bio": 11.0,
-      "Fusion": 120.7,
-      "Space": 51.81
+      "Fusion": 117.2,
+      "Space": 50.27
     },
     {
       "date": "2026-01-28",
@@ -3179,8 +3179,8 @@
       "Quantum": 43.83,
       "Semi": 87.21,
       "Bio": 8.75,
-      "Fusion": 128.75,
-      "Space": 49.38
+      "Fusion": 124.92,
+      "Space": 47.88
     },
     {
       "date": "2026-01-29",
@@ -3189,8 +3189,8 @@
       "Quantum": 45.88,
       "Semi": 83.53,
       "Bio": 7.8,
-      "Fusion": 126.33,
-      "Space": 55.1
+      "Fusion": 122.62,
+      "Space": 53.56
     },
     {
       "date": "2026-01-30",
@@ -3199,8 +3199,8 @@
       "Quantum": 47.42,
       "Semi": 79.91,
       "Bio": 9.29,
-      "Fusion": 125.52,
-      "Space": 54.53
+      "Fusion": 121.79,
+      "Space": 53.01
     },
     {
       "date": "2026-02-02",
@@ -3209,8 +3209,8 @@
       "Quantum": 48.6,
       "Semi": 70.53,
       "Bio": 8.95,
-      "Fusion": 125.81,
-      "Space": 55.73
+      "Fusion": 122.02,
+      "Space": 54.18
     },
     {
       "date": "2026-02-03",
@@ -3219,8 +3219,8 @@
       "Quantum": 51.07,
       "Semi": 78.72,
       "Bio": 10.21,
-      "Fusion": 139.69,
-      "Space": 60.93
+      "Fusion": 135.54,
+      "Space": 59.3
     },
     {
       "date": "2026-02-04",
@@ -3229,8 +3229,8 @@
       "Quantum": 48.14,
       "Semi": 75.48,
       "Bio": 10.45,
-      "Fusion": 146.16,
-      "Space": 66.89
+      "Fusion": 141.81,
+      "Space": 65.24
     },
     {
       "date": "2026-02-05",
@@ -3239,8 +3239,8 @@
       "Quantum": 46.48,
       "Semi": 71.75,
       "Bio": 14.03,
-      "Fusion": 139.1,
-      "Space": 63.53
+      "Fusion": 134.97,
+      "Space": 61.91
     },
     {
       "date": "2026-02-06",
@@ -3249,8 +3249,8 @@
       "Quantum": 46.0,
       "Semi": 75.22,
       "Bio": 11.32,
-      "Fusion": 152.41,
-      "Space": 68.78
+      "Fusion": 148.14,
+      "Space": 67.05
     },
     {
       "date": "2026-02-09",
@@ -3259,8 +3259,8 @@
       "Quantum": 50.67,
       "Semi": 84.33,
       "Bio": 13.44,
-      "Fusion": 158.3,
-      "Space": 73.89
+      "Fusion": 154.11,
+      "Space": 71.88
     },
     {
       "date": "2026-02-10",
@@ -3269,8 +3269,8 @@
       "Quantum": 53.16,
       "Semi": 87.41,
       "Bio": 16.01,
-      "Fusion": 169.87,
-      "Space": 79.96
+      "Fusion": 165.48,
+      "Space": 77.8
     },
     {
       "date": "2026-02-12",
@@ -3279,8 +3279,8 @@
       "Quantum": 54.63,
       "Semi": 87.4,
       "Bio": 17.27,
-      "Fusion": 167.44,
-      "Space": 76.28
+      "Fusion": 163.05,
+      "Space": 74.17
     },
     {
       "date": "2026-02-13",
@@ -3289,8 +3289,8 @@
       "Quantum": 47.62,
       "Semi": 85.88,
       "Bio": 17.0,
-      "Fusion": 158.45,
-      "Space": 72.44
+      "Fusion": 154.29,
+      "Space": 70.34
     },
     {
       "date": "2026-02-16",
@@ -3299,8 +3299,8 @@
       "Quantum": 51.26,
       "Semi": 89.68,
       "Bio": 19.41,
-      "Fusion": 163.67,
-      "Space": 75.86
+      "Fusion": 159.58,
+      "Space": 73.76
     },
     {
       "date": "2026-02-17",
@@ -3309,8 +3309,8 @@
       "Quantum": 49.06,
       "Semi": 89.49,
       "Bio": 17.55,
-      "Fusion": 161.67,
-      "Space": 73.34
+      "Fusion": 157.59,
+      "Space": 71.33
     },
     {
       "date": "2026-02-18",
@@ -3319,8 +3319,8 @@
       "Quantum": 49.76,
       "Semi": 90.09,
       "Bio": 21.9,
-      "Fusion": 165.38,
-      "Space": 76.05
+      "Fusion": 161.12,
+      "Space": 74.04
     },
     {
       "date": "2026-02-19",
@@ -3329,8 +3329,8 @@
       "Quantum": 51.99,
       "Semi": 90.9,
       "Bio": 23.32,
-      "Fusion": 178.6,
-      "Space": 75.33
+      "Fusion": 174.22,
+      "Space": 73.28
     },
     {
       "date": "2026-02-20",
@@ -3339,8 +3339,8 @@
       "Quantum": 50.56,
       "Semi": 89.63,
       "Bio": 21.77,
-      "Fusion": 182.0,
-      "Space": 75.75
+      "Fusion": 177.63,
+      "Space": 73.62
     },
     {
       "date": "2026-02-24",
@@ -3349,8 +3349,8 @@
       "Quantum": 49.81,
       "Semi": 92.93,
       "Bio": 21.23,
-      "Fusion": 188.45,
-      "Space": 74.75
+      "Fusion": 183.65,
+      "Space": 72.71
     },
     {
       "date": "2026-02-25",
@@ -3359,8 +3359,8 @@
       "Quantum": 49.65,
       "Semi": 101.1,
       "Bio": 21.85,
-      "Fusion": 192.18,
-      "Space": 73.24
+      "Fusion": 187.07,
+      "Space": 71.18
     },
     {
       "date": "2026-02-26",
@@ -3369,8 +3369,8 @@
       "Quantum": 52.64,
       "Semi": 100.87,
       "Bio": 22.27,
-      "Fusion": 194.33,
-      "Space": 76.88
+      "Fusion": 189.09,
+      "Space": 74.8
     },
     {
       "date": "2026-02-27",
@@ -3379,8 +3379,8 @@
       "Quantum": 57.62,
       "Semi": 96.22,
       "Bio": 25.71,
-      "Fusion": 199.38,
-      "Space": 83.29
+      "Fusion": 194.28,
+      "Space": 81.13
     },
     {
       "date": "2026-03-02",
@@ -3389,8 +3389,8 @@
       "Quantum": 54.69,
       "Semi": 94.16,
       "Bio": 22.06,
-      "Fusion": 207.92,
-      "Space": 86.81
+      "Fusion": 202.5,
+      "Space": 84.63
     },
     {
       "date": "2026-03-03",
@@ -3399,8 +3399,8 @@
       "Quantum": 52.22,
       "Semi": 87.45,
       "Bio": 18.78,
-      "Fusion": 195.13,
-      "Space": 78.78
+      "Fusion": 189.91,
+      "Space": 76.73
     },
     {
       "date": "2026-03-04",
@@ -3409,8 +3409,8 @@
       "Quantum": 45.87,
       "Semi": 76.6,
       "Bio": 14.67,
-      "Fusion": 175.47,
-      "Space": 68.45
+      "Fusion": 170.63,
+      "Space": 66.55
     },
     {
       "date": "2026-03-05",
@@ -3419,8 +3419,8 @@
       "Quantum": 52.84,
       "Semi": 84.18,
       "Bio": 18.12,
-      "Fusion": 188.92,
-      "Space": 76.07
+      "Fusion": 183.9,
+      "Space": 74.09
     },
     {
       "date": "2026-03-06",
@@ -3429,8 +3429,8 @@
       "Quantum": 55.18,
       "Semi": 86.03,
       "Bio": 21.05,
-      "Fusion": 184.23,
-      "Space": 75.1
+      "Fusion": 179.44,
+      "Space": 73.16
     },
     {
       "date": "2026-03-09",
@@ -3439,8 +3439,8 @@
       "Quantum": 56.37,
       "Semi": 69.11,
       "Bio": 18.11,
-      "Fusion": 164.9,
-      "Space": 65.71
+      "Fusion": 160.59,
+      "Space": 63.85
     },
     {
       "date": "2026-03-10",
@@ -3449,8 +3449,8 @@
       "Quantum": 65.72,
       "Semi": 79.42,
       "Bio": 21.78,
-      "Fusion": 179.22,
-      "Space": 71.41
+      "Fusion": 174.63,
+      "Space": 69.48
     },
     {
       "date": "2026-03-11",
@@ -3459,8 +3459,8 @@
       "Quantum": 63.97,
       "Semi": 84.19,
       "Bio": 22.9,
-      "Fusion": 190.65,
-      "Space": 73.62
+      "Fusion": 185.76,
+      "Space": 71.71
     },
     {
       "date": "2026-03-12",
@@ -3469,8 +3469,8 @@
       "Quantum": 62.56,
       "Semi": 81.19,
       "Bio": 19.8,
-      "Fusion": 186.1,
-      "Space": 74.89
+      "Fusion": 181.2,
+      "Space": 72.91
     },
     {
       "date": "2026-03-13",
@@ -3479,8 +3479,8 @@
       "Quantum": 60.5,
       "Semi": 78.69,
       "Bio": 17.52,
-      "Fusion": 189.45,
-      "Space": 79.7
+      "Fusion": 184.39,
+      "Space": 77.76
     },
     {
       "date": "2026-03-16",
@@ -3489,8 +3489,8 @@
       "Quantum": 64.82,
       "Semi": 79.21,
       "Bio": 17.53,
-      "Fusion": 184.58,
-      "Space": 79.69
+      "Fusion": 179.7,
+      "Space": 77.77
     },
     {
       "date": "2026-03-17",
@@ -3499,8 +3499,8 @@
       "Quantum": 62.51,
       "Semi": 74.43,
       "Bio": 18.01,
-      "Fusion": 175.57,
-      "Space": 76.15
+      "Fusion": 170.88,
+      "Space": 74.24
     },
     {
       "date": "2026-03-18",
@@ -3509,8 +3509,8 @@
       "Quantum": 65.71,
       "Semi": 81.95,
       "Bio": 18.93,
-      "Fusion": 190.53,
-      "Space": 85.91
+      "Fusion": 185.62,
+      "Space": 83.9
     },
     {
       "date": "2026-03-19",
@@ -3519,8 +3519,8 @@
       "Quantum": 62.51,
       "Semi": 75.48,
       "Bio": 13.84,
-      "Fusion": 185.49,
-      "Space": 78.01
+      "Fusion": 180.66,
+      "Space": 76.05
     },
     {
       "date": "2026-03-23",
@@ -3529,8 +3529,8 @@
       "Quantum": 54.51,
       "Semi": 66.01,
       "Bio": 9.13,
-      "Fusion": 169.41,
-      "Space": 67.52
+      "Fusion": 164.77,
+      "Space": 65.7
     },
     {
       "date": "2026-03-24",
@@ -3539,8 +3539,8 @@
       "Quantum": 58.38,
       "Semi": 67.3,
       "Bio": 13.32,
-      "Fusion": 176.1,
-      "Space": 68.88
+      "Fusion": 171.22,
+      "Space": 67.09
     },
     {
       "date": "2026-03-25",
@@ -3549,8 +3549,8 @@
       "Quantum": 57.7,
       "Semi": 74.91,
       "Bio": 16.31,
-      "Fusion": 194.32,
-      "Space": 76.56
+      "Fusion": 189.08,
+      "Space": 74.77
     },
     {
       "date": "2026-03-26",
@@ -3559,8 +3559,8 @@
       "Quantum": 54.84,
       "Semi": 71.55,
       "Bio": 14.41,
-      "Fusion": 191.32,
-      "Space": 73.29
+      "Fusion": 185.96,
+      "Space": 71.48
     },
     {
       "date": "2026-03-27",
@@ -3569,8 +3569,8 @@
       "Quantum": 54.02,
       "Semi": 68.31,
       "Bio": 17.53,
-      "Fusion": 186.66,
-      "Space": 71.28
+      "Fusion": 181.39,
+      "Space": 69.48
     },
     {
       "date": "2026-03-30",
@@ -3579,10 +3579,20 @@
       "Quantum": 48.97,
       "Semi": 64.21,
       "Bio": 15.34,
-      "Fusion": 183.47,
-      "Space": 62.84
+      "Fusion": 178.18,
+      "Space": 61.06
+    },
+    {
+      "date": "2026-03-31",
+      "Nikkei225": 32.83,
+      "AI_Robot": 6.27,
+      "Quantum": 48.49,
+      "Semi": 58.99,
+      "Bio": 13.67,
+      "Fusion": 162.67,
+      "Space": 57.32
     }
   ],
-  "last_updated": "2026-03-30T08:22:18.334317+00:00",
-  "nikkei_current_price": 51885.85
+  "last_updated": "2026-03-31T08:08:35.900642+00:00",
+  "nikkei_current_price": 51063.72
 }
